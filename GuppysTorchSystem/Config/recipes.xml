@@ -1,0 +1,20 @@
+<configs>
+	<append xpath="/recipes">
+		<!-- Guppy's Torch Mod -->
+		<recipe name="PlaceableFastBurnTorch" count="1">
+			<ingredient name="handTorch" count="1"/>
+		<ingredient name="drinkCanEmpty" count="1"/>
+		</recipe>
+
+		<recipe name="PlaceableSlowBurnTorch" count="1">
+			<ingredient name="handTorch" count="1"/>
+			<ingredient name="drinkCanEmpty" count="1"/>
+			<ingredient name="resourceOil" count="1"/>	
+		</recipe>
+
+		<recipe name="handTorch" count="1">
+			<ingredient name="resourceCloth" count="1"/>
+			<ingredient name="resourceWood" count="1"/>
+		</recipe>
+	</append>
+</configs>
