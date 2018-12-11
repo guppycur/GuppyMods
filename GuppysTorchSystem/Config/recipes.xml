@@ -17,4 +17,9 @@
 			<ingredient name="resourceWood" count="1"/>
 		</recipe>
 	</append>
+	
+<remove xpath="/recipes/recipe[@name='meleeToolTorch']" />
+
+<set xpath="/recipes/recipe[@name='modMeleeClubBurningShaft']/ingredient[@name='meleeToolTorch']/@name">handTorch</set>
+	
 </configs>
