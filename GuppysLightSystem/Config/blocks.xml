@@ -29,7 +29,7 @@
 			<property name="SortOrder1" value="70a0"/>	
 		</block>
 		
-		<block name="ConstructionLight">
+		<block name="PlaceableConstructionLight">
 			<property name="Material" value="Mwood_weak"/>
 			<property name="MaxDamage" value="1"/>
 			<property name="StabilitySupport" value="false"/>
@@ -57,7 +57,7 @@
 			<property name="SortOrder1" value="70a0"/>			
 		</block>
 
-		<block name="LanternBlock">
+		<block name="PlaceableLanternBlock">
 			<property name="Material" value="Mwood_weak"/>
 			<property name="MaxDamage" value="1"/>
 			<property name="StabilitySupport" value="false"/>
@@ -85,5 +85,21 @@
 			<property name="SortOrder1" value="70a0"/>			
 		</block>		
 
+	</append>
+	
+	<append xpath="/blocks/block[@name='workLightPOI']">
+		<drop event="Destroy" name="PlaceableConstructionLight" count="1"/>
+		<drop event="Fall" name="scrapMetalPile" count="0" prob="0"/>
+		<drop event="Destroy" name="resourceScrapIron" count="0" prob="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='lanternDecorLight']">
+		<drop event="Destroy" name="PlaceableLanternBlock" count="1"/>
+		<drop event="Fall" name="scrapMetalPile" count="0" prob="0"/>
+		<drop event="Destroy" name="resourceScrapIron" count="0" prob="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='flashlightDecor']">
+		<drop event="Destroy" name="PlaceableFlashLight" count="1"/>
+		<drop event="Fall" name="scrapMetalPile" count="0" prob="0"/>
+		<drop event="Destroy" name="resourceScrapIron" count="0" prob="0"/>
 	</append>
 </configs>

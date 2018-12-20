@@ -42,7 +42,7 @@
 			<property class="Action1">
 				<property name="Class" value="PlaceAsBlock"/>
 				<property name="Delay" value="0.5"/>
-				<property name="Blockname" value="LanternBlock"/>
+				<property name="Blockname" value="PlaceableLanternBlock"/>
 			</property>
 			<property name="Group" value="Basics,Decor/Miscellaneous"/>
 			<property name="LightValue" value="0.35"/>
