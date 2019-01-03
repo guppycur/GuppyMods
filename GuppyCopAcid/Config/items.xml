@@ -1,0 +1,14 @@
+<configs>
+
+<append xpath="/items">
+
+	<item name="itemBileDuct">
+		<property name="Extends" value="medicalBloodBag"/>
+		<property name="CustomIcon" value="copBileDuct" />	
+		<property name="Material" value="MresourceClayLump"/>
+		<property name="CreativeMode" value="None"/>
+	</item>
+		
+</append>
+
+</configs>

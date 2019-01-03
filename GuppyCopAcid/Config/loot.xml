@@ -1,0 +1,11 @@
+<configs>
+
+<append xpath="/lootcontainers">
+
+	<lootcontainer id="111" count="1" size="1,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+		<item name="itemBileDuct" count="1" prob="1"/>
+	</lootcontainer>
+		
+</append>
+
+</configs>

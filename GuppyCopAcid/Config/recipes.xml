@@ -1,0 +1,12 @@
+<configs>
+
+<append xpath="/recipes">
+
+	<recipe name="resourceAcid" count="1" craft_area="chemistryStation">
+		<ingredient name="itemBileDuct" count="1"/>
+		<incredient name="drinkCanEmpty" count="1"/>
+	</recipe>
+	
+</append>
+	
+</configs>
