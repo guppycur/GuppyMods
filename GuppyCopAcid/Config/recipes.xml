@@ -3,7 +3,7 @@
 <append xpath="/recipes">
 
 	<recipe name="resourceAcid" count="1" craft_area="chemistryStation">
-		<incredient name="drinkJarEmpty" count="1"/>
+		<ingredient name="drinkJarEmpty" count="1"/>
 		<ingredient name="itemBileDuct" count="1"/>
 	</recipe>
 	
