@@ -88,18 +88,12 @@
 	</append>
 	
 	<append xpath="/blocks/block[@name='workLightPOI']">
-		<drop event="Destroy" name="PlaceableConstructionLight" count="1"/>
-		<drop event="Fall" name="scrapMetalPile" count="0" prob="0"/>
-		<drop event="Destroy" name="resourceScrapIron" count="0" prob="0"/>
+		<property name="CanPickup" value="true" param1="PlaceableConstructionLight"/>
 	</append>
 	<append xpath="/blocks/block[@name='lanternDecorLight']">
-		<drop event="Destroy" name="PlaceableLanternBlock" count="1"/>
-		<drop event="Fall" name="scrapMetalPile" count="0" prob="0"/>
-		<drop event="Destroy" name="resourceScrapIron" count="0" prob="0"/>
+		<property name="CanPickup" value="true" param1="handLantern"/>		
 	</append>
 	<append xpath="/blocks/block[@name='flashlightDecor']">
-		<drop event="Destroy" name="PlaceableFlashLight" count="1"/>
-		<drop event="Fall" name="scrapMetalPile" count="0" prob="0"/>
-		<drop event="Destroy" name="resourceScrapIron" count="0" prob="0"/>
+		<property name="CanPickup" value="true" param1="handFlashlight"/>
 	</append>
 </configs>

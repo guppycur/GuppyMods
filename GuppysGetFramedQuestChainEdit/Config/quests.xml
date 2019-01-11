@@ -1,0 +1,13 @@
+<guppy>
+
+    <remove xpath="/quests/quest[@id='quest_BasicSurvival7']/objective[@type='BlockUpgrade' and @id='woodFrameBlock']" />
+    
+    <insertAfter xpath="/quests/quest[@id='quest_BasicSurvival7']/objective[@type='FetchKeep' and @id='resourceWood']" >
+        <objective type="FetchKeep" id="resourceNail" value="4" phase="1" />
+    </insertAfter>
+    
+    <set xpath="/quests/quest[@id='quest_BasicSurvival7']/objective[@type='FetchKeep' and @id='resourceWood']/@value">6</set>
+    <set xpath="/quests/quest[@id='quest_BasicSurvival7']/objective[@type='Craft' and @id='woodFrameBlock']/@value">1</set>
+    <set xpath="/quests/quest[@id='quest_BasicSurvival7']/objective[@type='BlockPlace' and @id='woodFrameBlock']/@value">1</set>
+
+</guppy>

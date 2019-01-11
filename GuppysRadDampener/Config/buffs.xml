@@ -1,0 +1,25 @@
+<configs>
+	<append xpath="/buffs" >
+		
+		<buff name="RemoveRadRegenBuff" icon="ui_game_symbol_fire" icon_color="0,0,255" icon_blink="true" remove_on_death="false">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<update_rate value=".7"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="15" buff="buffRadiatedRegenBlock"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="buffRadiatedRegenBlock"/>
+			</effect_group>
+		</buff>
+	
+		<buff name="AddRadRegenBuff" icon="ui_game_symbol_pistol" icon_color="0,0,255" icon_blink="true" remove_on_death="false">
+			<stack_type value="replace"/>
+			<duration value="5"/>
+			<update_rate value=".7"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="selfAOE" range="15" buff="buffRadiatedRegenBlock"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="otherAOE" range="15" buff="buffRadiatedRegenBlock"/>
+			</effect_group>
+		</buff>
+	</append>
+	
+</configs>

@@ -1,6 +1,0 @@
-<configs>
-
-	<append xpath='/gamestages/spawner[@name="BloodMoonHorde"]/gamestage[ @stage &gt;23]' >
-		<spawn group="ZombiesNight" num="100" maxAlive="8"/>
-	</append>
-</configs>
