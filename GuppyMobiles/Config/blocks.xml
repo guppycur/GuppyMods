@@ -1,0 +1,24 @@
+<configs>
+<append xpath="/blocks">	
+
+<block name="guppyTrainTrackStraight">
+	<property name="Extends" value="stainlessSteelMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/guppyTrain.unity3d?TrainTrackStraightPrefab"/>
+	<property name="SortOrder2" value="0290"/> <!-- SortShape -->
+	<property name="DowngradeBlock" value="rConcreteWedge"/>
+</block>
+
+<block name="guppyTrainTrackStart">
+	<property name="Extends" value="stainlessSteelMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/guppyTrain.unity3d?TrainStarterArea"/>
+	<property name="SortOrder2" value="0290"/> <!-- SortShape -->
+	<property name="DowngradeBlock" value="rConcreteWedge"/>
+  <property name="MultiBlockDim" value="2,1,2"/>
+</block>
+
+</append>
+</configs>

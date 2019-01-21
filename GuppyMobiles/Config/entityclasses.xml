@@ -5,7 +5,7 @@
 	<property name="Tags" value="vehicle"/>
 	<property name="Class" value="EntityMinibike"/>
 	<property name="Parent" value="Cars"/>
-	<property name="Prefab" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyMilitaryTruck"/>
+	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesMilitary.unity3d?guppyMilitaryTruck"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="SurfaceCategory" value="metal"/>
 	<property name="IgnoreTrigger" value="true"/>
@@ -25,7 +25,7 @@
 	<property name="Tags" value="vehicle"/>
 	<property name="Class" value="EntityMinibike"/>
 	<property name="Parent" value="Cars"/>
-	<property name="Prefab" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyMilitaryCar"/>
+	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesMilitary.unity3d?guppyMilitaryCar"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="SurfaceCategory" value="metal"/>
 	<property name="IgnoreTrigger" value="true"/>
@@ -36,6 +36,61 @@
 	<property name="Explosion.RadiusEntities" value="3"/>
 	<property name="Explosion.BlockDamage" value="20"/>
 	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+
+<entity_class name="vehicleGuppyPickup">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityMinibike"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesCars.unity3d?guppyVehiclePickup"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="77"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+
+<entity_class name="vehicleGuppyHotRod">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityMinibike"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesCars.unity3d?guppyVehicleHotRod"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="77"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+
+<entity_class name="vehicleGuppyTrain">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityMinibike"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/guppyTrain.unity3d?guppyVehicleTrainCartTemplate"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="77"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<!-- <property name="Explosion.ParticleIndex" value="6"/> -->
+	<!-- <property name="Explosion.RadiusBlocks" value="3"/> -->
+	<!-- <property name="Explosion.RadiusEntities" value="3"/> -->
+	<!-- <property name="Explosion.BlockDamage" value="20"/> -->
+	<!-- <property name="Explosion.EntityDamage" value="20"/> -->
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_minibike"/>
