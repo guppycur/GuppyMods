@@ -3,7 +3,7 @@
 
 <entity_class name="vehicleGuppyMilitaryTruck">
 	<property name="Tags" value="vehicle"/>
-	<property name="Class" value="EntityMinibike"/>
+	<property name="Class" value="EntityVJeep"/>
 	<property name="Parent" value="Cars"/>
 	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesMilitary.unity3d?guppyMilitaryTruck"/>
 	<property name="ModelType" value="Standard"/>
@@ -23,7 +23,7 @@
 
 <entity_class name="vehicleGuppyMilitaryCar">
 	<property name="Tags" value="vehicle"/>
-	<property name="Class" value="EntityMinibike"/>
+	<property name="Class" value="EntityVJeep"/>
 	<property name="Parent" value="Cars"/>
 	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesMilitary.unity3d?guppyMilitaryCar"/>
 	<property name="ModelType" value="Standard"/>
@@ -43,7 +43,7 @@
 
 <entity_class name="vehicleGuppyPickup">
 	<property name="Tags" value="vehicle"/>
-	<property name="Class" value="EntityMinibike"/>
+	<property name="Class" value="EntityVJeep"/>
 	<property name="Parent" value="Cars"/>
 	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesCars.unity3d?guppyVehiclePickup"/>
 	<property name="ModelType" value="Standard"/>
@@ -63,9 +63,24 @@
 
 <entity_class name="vehicleGuppyHotRod">
 	<property name="Tags" value="vehicle"/>
-	<property name="Class" value="EntityMinibike"/>
+	<property name="Class" value="EntityVJeep"/>
 	<property name="Parent" value="Cars"/>
 	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesCars.unity3d?guppyVehicleHotRod"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="77"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+
+<entity_class name="vehicleGuppySedan">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesCars.unity3d?guppyVehicleSedan"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="SurfaceCategory" value="metal"/>
 	<property name="IgnoreTrigger" value="true"/>
