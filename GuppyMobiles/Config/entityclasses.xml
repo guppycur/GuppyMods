@@ -91,6 +91,21 @@
 	<property name="MapIcon" value="ui_game_symbol_minibike"/>
 </entity_class>
 
+<entity_class name="vehicleGuppyVan">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesCars.unity3d?guppyVehicleVan"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="77"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+
 <entity_class name="vehicleGuppyTrain">
 	<property name="Tags" value="vehicle"/>
 	<property name="Class" value="EntityMinibike"/>
