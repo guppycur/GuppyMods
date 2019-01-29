@@ -1,0 +1,41 @@
+<configs>
+<append xpath="/buffs">
+  
+  <buff name="buffRage" name_key="buffRageName" description_key="buffRageDesc" tooltip_key="buffRageTooltip" icon="ui_game_symbol_radiation" icon_color="255,0,0" remove_on_death="true">
+		<stack_type value="ignore"/>
+		<duration value="2000000000"/>
+		<update_rate value="1"/>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffHasRage">
+          <requirement name="StatComparePercCurrentToMax" stat="health" operation="LTE" value=".5"/>
+        </triggered_effect>  
+        <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffRageBlock">
+          <requirement name="StatComparePercCurrentToMax" stat="health" operation="LTE" value=".05"/>
+        </triggered_effect>    
+      </effect_group>
+	</buff> 
+  
+	<buff name="buffHasRage" name_key="buffHasRageName"  icon="ui_game_symbol_radiation" icon_color="255,255,0" hidden="true" remove_on_death="true">
+		<stack_type value="replace"/>
+		<duration value="2"/>
+    
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_hotembersZombie"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="pegasus"/>
+      </effect_group>
+	</buff>  
+  
+  
+	<buff name="buffRageBlock" name_key="buffRageBlockName"  icon="ui_game_symbol_radiation" icon_color="255,255,0" hidden="true" remove_on_death="false">
+		<stack_type value="replace"/>
+		<duration value="30"/>
+    
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="pegasus"/>
+      </effect_group>
+	</buff>  
+</append>  
+
+</configs>
