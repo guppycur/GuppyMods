@@ -1,27 +1,6 @@
 <configs>
 <append xpath="/blocks">	
 
-<block name="guppyTrainTrackStraight">
-	<property name="Extends" value="woodFrameBlock"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="Shape" value="ModelEntity" />
-	<property name="Model" value="#@modfolder:Resources/guppyTrain.unity3d?TrainTrackStraightPrefab"/>
-	<property name="SortOrder2" value="0290"/> <!-- SortShape -->
-	<property name="DowngradeBlock" value="rConcreteWedge"/>
-  <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-</block>
-
-<block name="guppyTrainTrackStart">
-	<property name="Extends" value="woodFrameBlock"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="Shape" value="ModelEntity" />
-	<property name="Model" value="#@modfolder:Resources/guppyTrain.unity3d?TrainStarterArea"/>
-	<property name="SortOrder2" value="0290"/> <!-- SortShape -->
-	<property name="DowngradeBlock" value="rConcreteWedge"/>
-  <property name="MultiBlockDim" value="2,1,2"/>
-  <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-</block>
-
 <block name="guppyAutoWorkbench">
 	<property name="Extends" value="woodFrameBlock"/>
 	<property name="CreativeMode" value="Player"/>
@@ -33,5 +12,190 @@
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>  
 </block>
 
+<block name="guppyVehicleBlockSedan1">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockSedan1Prefab"/>
+  <property name="MultiBlockDim" value="2,2,6"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="19"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/>  
+	<property name="SortOrder1" value="70a0" />  
+</block>
+
+<block name="guppyVehicleBlockSedan2">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockSedan2Prefab"/>
+  <property name="MultiBlockDim" value="2,2,6"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="19"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/> 
+  <property name="SortOrder1" value="70a0" />
+</block>
+<block name="guppyVehicleBlockPoliceCar">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockEMSPoliceCarPrefab"/>
+  <property name="MultiBlockDim" value="2,2,6"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="19"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/> 
+  <property name="SortOrder1" value="70a0" />
+</block>
+
+<block name="guppyVehicleBlockAmbulance">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockEMSAmbulancePrefab"/>
+  <property name="MultiBlockDim" value="3,3,7"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="19"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<property name="DowngradeBlock" value="guppyVehicleBlockAmbulanceDamaged"/> 
+  <property name="SortOrder1" value="70a0" />
+</block>
+<block name="guppyVehicleBlockAmbulanceDamaged">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockEMSAmbulanceDamagedPrefab"/>
+  <property name="MultiBlockDim" value="3,3,7"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="19"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+  <property name="SortOrder1" value="70a0" />
+</block>
+
+<block name="guppyVehicleBlockFiretruck">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockEMSFiretruckPrefab"/>
+  <property name="MultiBlockDim" value="3,3,12"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="19"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+  <property name="SortOrder1" value="70a0" />
+</block>
+<!--
+<block name="guppyVehicleBlockFiretruckeDamaged">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockEMSFiretruckDamagedPrefab"/>
+  <property name="MultiBlockDim" value="3,3,7"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="19"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+  <property name="SortOrder1" value="70a0" />
+</block>
+-->
 </append>
 </configs>
