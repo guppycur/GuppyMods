@@ -1,0 +1,17 @@
+<configs>
+<!--<insertAfter xpath="/biomes/biome[starts-with(@name, 'subbiome')/decorations/decoration[@blockname='carsRandomHelper']" >-->
+<insertAfter xpath="/worldgeneration/pois/poi/blockontop[@blockname='carsRandomHelper']" >
+     <blockontop blockname="guppycarsRandomHelper" prob="0.0005" rotatemax="3"/>
+     <blockontop blockname="spawnvehicleGuppyMilitaryTruck" prob="0.000035" rotatemax="3"/>
+     <blockontop blockname="spawnvehicleGuppyMilitaryCar" prob="0.000035" rotatemax="3"/>
+     <blockontop blockname="spawnvehicleGuppyPickup" prob="0.000035" rotatemax="3"/>
+     <blockontop blockname="spawnvehicleGuppyHotRod" prob="0.000025" rotatemax="3"/>
+     <blockontop blockname="spawnvehicleGuppyMotorCycle" prob="0.000035" rotatemax="3"/>
+     <blockontop blockname="spawnvehicleGuppySedan" prob="0.000035" rotatemax="3"/>
+     <blockontop blockname="spawnvehicleGuppyVan" prob="0.000035" rotatemax="3"/>
+     <blockontop blockname="spawnvehicleGuppyFireTruck" prob="0.000025" rotatemax="3"/>
+     <blockontop blockname="spawnvehicleGuppyAmbulance" prob="0.000025" rotatemax="3"/>
+     <blockontop blockname="spawnvehicleGuppyAmbulanceDamaged" prob="0.000035" rotatemax="3"/>
+     <blockontop blockname="spawnvehicleGuppyPoliceCar" prob="0.000035" rotatemax="3"/>
+</insertAfter> 
+</configs>

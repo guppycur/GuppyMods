@@ -12,6 +12,8 @@
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>  
 </block>
 
+<!-- Begin Lootable Blocks -->
+
 <block name="guppyVehicleBlockSedan1">
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockSedan1Prefab"/>
@@ -37,6 +39,17 @@
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
 	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/>  
 	<property name="SortOrder1" value="70a0" />  
+  <property name="BigDecorationRadius" value="5"/>
+  <property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
+
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>
 </block>
 
 <block name="guppyVehicleBlockSedan2">
@@ -64,6 +77,17 @@
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
 	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/> 
   <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+  <property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
+
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
 </block>
 <block name="guppyVehicleBlockPoliceCar">
 	<property name="Shape" value="ModelEntity" />
@@ -90,6 +114,17 @@
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
 	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/> 
   <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+  <property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
+
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
 </block>
 
 <block name="guppyVehicleBlockAmbulance">
@@ -117,6 +152,17 @@
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
 	<property name="DowngradeBlock" value="guppyVehicleBlockAmbulanceDamaged"/> 
   <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+  <property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
+
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
 </block>
 <block name="guppyVehicleBlockAmbulanceDamaged">
 	<property name="Shape" value="ModelEntity" />
@@ -142,6 +188,17 @@
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
   <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+  <property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
+
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
 </block>
 
 <block name="guppyVehicleBlockFiretruck">
@@ -168,6 +225,17 @@
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
   <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+  <property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
+
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
 </block>
 <!--
 <block name="guppyVehicleBlockFiretruckeDamaged">
@@ -197,5 +265,159 @@
   <property name="SortOrder1" value="70a0" />
 </block>
 -->
+
+<block name="guppyVehicleBlockMotorCycle">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockMotorCyclePrefab"/>
+  <property name="MultiBlockDim" value="1,2,3"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="19"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<property name="DowngradeBlock" value="guppyVehicleBlockMotorCycleDamaged"/> 
+  <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+  <property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
+
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="guppyVehicleBlockMotorCycleDamaged">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockMotorCycleDamagedPrefab"/>
+  <property name="MultiBlockDim" value="1,2,3"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="19"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<property name="DowngradeBlock" value="guppyVehicleBlockAmbulanceDamaged"/> 
+  <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+  <property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
+
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>
+
+<!-- Begin Spawn Blocks -->
+  
+</block>
+<block name="spawnvehicleGuppyMilitaryTruck">
+	<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+	<property name="CustomIcon" value="metalTrussingRampOld"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Class" value="SpawnEntity"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Entities/Electrical/battery_bankPrefab"/> <property name="HandleFace" value="Bottom"/>
+  <property name="SpawnClass" value="vehicleGuppyMilitaryTruck"/> 
+	<property name="FilterTags" value="fdesign"/>
+	<property name="Collide" value="sight"/>
+  <property name="BigDecorationRadius" value="5" />
+</block>
+
+<block name="spawnvehicleGuppyMilitaryCar">
+  <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
+  <property name="SpawnClass" value="vehicleGuppyMilitaryCar"/>
+</block>
+<block name="spawnvehicleGuppyPickup">
+  <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
+  <property name="SpawnClass" value="vehicleGuppyPickup"/>
+</block>
+<block name="spawnvehicleGuppyHotRod">
+  <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
+  <property name="SpawnClass" value="vehicleGuppyHotRod"/>
+</block>
+<block name="spawnvehicleGuppyMotorCycle">
+  <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
+  <property name="SpawnClass" value="vehicleGuppyMotorCycle"/>
+</block>
+<block name="spawnvehicleGuppySedan">
+  <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
+  <property name="SpawnClass" value="vehicleGuppySedan"/>
+</block>
+<block name="spawnvehicleGuppyVan">
+  <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
+  <property name="SpawnClass" value="vehicleGuppyVan"/>
+</block>
+<block name="spawnvehicleGuppyFireTruck">
+  <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
+  <property name="SpawnClass" value="vehicleGuppyFireTruck"/>
+</block>
+<block name="spawnvehicleGuppyAmbulance">
+  <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
+  <property name="SpawnClass" value="vehicleGuppyAmbulance"/>
+</block>
+<block name="spawnvehicleGuppyAmbulanceDamaged">
+  <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
+  <property name="SpawnClass" value="vehicleGuppyAmbulanceDamaged"/>
+</block>
+<block name="spawnvehicleGuppyPoliceCar">
+  <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
+  <property name="SpawnClass" value="vehicleGuppyPoliceCar"/>
+</block>
+
+<block name="guppycarsRandomHelper">
+	<property name="CustomIcon" value="cntCar03SedanDamage0"/> <property name="CustomIconTint" value="ff8080"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="16"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="Entities/Vehicles/car03_dmg0_Prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<drop event="Destroy" count="0"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="RandomTintColor1" value="0,255,0" param1="car03_white"/> <!-- intentionally bright green so the prefab gang can identify them -->
+	<property name="ActivationDistance" value="8"/>
+	<property name="FilterTags" value="floot,fdesign"/>
+</block>
+
+<!--,vehicleGuppyMilitaryCar,vehicleGuppyPickup,vehicleGuppyHotRod,vehicleGuppyMotorCycle,vehicleGuppySedan,vehicleGuppyVan,vehicleGuppyFireTruck,vehicleGuppyAmbulance,vehicleGuppyAmbulanceDamaged,vehicleGuppyPoliceCar"/> -->
 </append>
 </configs>
