@@ -484,7 +484,7 @@
 		<property class="wheel1">
 			<property name="parent_part" value="chassis"/>
 			<property name="steerTransform" value="Origin/frontRightWheelStear_joint"/>
-			<property name="tireTransform" value="Origin/frontLeftWheelStear_joint/frontRightWheelStear_joint/frontRightWheel_joint"/>
+			<property name="tireTransform" value="Origin/frontRightWheelStear_joint/frontRightWheel_joint"/>
 			<property name="tireSuspensionPercent" value="1"/>
 			<property name="torqueScale_motor_brake" value="1, .8"/>
 		</property>
@@ -1423,7 +1423,7 @@
 		<property class="wheel1">
 			<property name="parent_part" value="chassis"/>
 			<property name="steerTransform" value="Origin/frontRightWheelStear_joint"/>
-			<property name="tireTransform" value="Origin/frontLeftWheelStear_joint/frontRightWheelStear_joint/frontRightWheel_joint"/>
+			<property name="tireTransform" value="Origin/frontRightWheelStear_joint/frontRightWheel_joint"/>
 			<property name="tireSuspensionPercent" value="1"/>
 			<property name="torqueScale_motor_brake" value="1, .8"/>
 		</property>
@@ -1573,7 +1573,7 @@
 		<property class="wheel1">
 			<property name="parent_part" value="chassis"/>
 			<property name="steerTransform" value="Origin/frontRightWheelStear_joint"/>
-			<property name="tireTransform" value="Origin/frontLeftWheelStear_joint/frontRightWheelStear_joint/frontRightWheel_joint"/>
+			<property name="tireTransform" value="Origin/frontRightWheelStear_joint/frontRightWheel_joint"/>
 			<property name="tireSuspensionPercent" value="1"/>
 			<property name="torqueScale_motor_brake" value="1, .8"/>
 		</property>
@@ -1722,7 +1722,7 @@
 		<property class="wheel1">
 			<property name="parent_part" value="chassis"/>
 			<property name="steerTransform" value="Origin/frontRightWheelStear_joint"/>
-			<property name="tireTransform" value="Origin/frontLeftWheelStear_joint/frontRightWheelStear_joint/frontRightWheel_joint"/>
+			<property name="tireTransform" value="Origin/frontRightWheelStear_joint/frontRightWheel_joint"/>
 			<property name="tireSuspensionPercent" value="1"/>
 			<property name="torqueScale_motor_brake" value="1, .8"/>
 		</property>

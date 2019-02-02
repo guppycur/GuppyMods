@@ -1,6 +1,34 @@
 <configs>
 <append xpath="/blocks">	
 
+<block name="spawnerMaster">
+		<property name="Class" value="MortSpawner, Mods" />
+		<property name="Model" value="#@modfolder:Resources/GuppyRequired.unity3d?FakeAirPrefab"/>
+		<property name="Shape" value="ModelEntity" />
+		<property name="Material" value="Mcloth" />
+		<property name="LootList" value="1" />
+		<property name="Texture" value="116" />
+		<property name="Group" value="Decor" />
+		<drop event="Destroy" count="0" />
+		<property name="CreativeMode" value="None" />
+		<property name="TickRate" value="5" />
+		<property name="ParticleAction" value="None" />
+</block>
+  
+<block name="spawnVehicle">
+        <property name="Extends" value="spawnerMaster" />
+        <property name="EntityGroup" value="guppyVehicles" />
+        <property name="SpawnRadius" value="51" />
+        <property name="SpawnArea" value="3" />
+        <property name="NumberToSpawn" value="1" />
+        <property name="MaxSpawned" value="1" />
+        <property name="CheckArea" value="51" />  
+        <property name="PauseTime" value="999" />
+        <property name="NumberToPause" value="1" />
+        <property name="CreativeMode" value="Dev"/>
+</block>
+
+
 <block name="guppyAutoWorkbench">
 	<property name="Extends" value="woodFrameBlock"/>
 	<property name="CreativeMode" value="Player"/>
