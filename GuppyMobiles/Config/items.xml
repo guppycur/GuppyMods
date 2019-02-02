@@ -1,0 +1,127 @@
+<configs>
+	<append xpath="/items">
+  
+    <item name="damagedsmallEngine">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="5"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+    </item>
+    <item name="damagedcarCarburetor">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="5"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+    </item>  
+    <item name="damagedcarSeats">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="5"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+    </item>
+    <item name="damagedcarBattery">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="5"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+    </item>
+    <item name="damagedcarTransmission">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="5"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+    </item>
+    <item name="damagedvehicleWheels">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="5"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+    </item>
+    <item name="damagedcarChassis">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="5"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+    </item>
+    <item name="carCarburetor">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="5"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+    </item>
+    <item name="carSeats">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="5"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+    </item>
+    <item name="carTransmission">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="5"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+    </item> 
+    <item name="carChassis">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="5"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+    </item>    
+
+	</append>
+</configs>

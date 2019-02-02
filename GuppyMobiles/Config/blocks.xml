@@ -1,4 +1,87 @@
 <configs>
+
+<set xpath="/blocks/block[@name='cntCar03SedanDamage0']/property[@name='LootList']/@value">173</set>
+<set xpath="/blocks/block[@name='cntCar03SedanDamage1']/property[@name='LootList']/@value">173</set>
+
+<set xpath="/blocks/block[@name='cntCar03SedanDamage2']/property[@name='Class']/@value">CarExplodeLoot</set>
+
+<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2']/property[@name='Class']">
+	<property name="LootList" value="173"/>
+</insertAfter>
+
+<set xpath="/blocks/block[@name='cntCar03SedanDamage0']/property[@name='DowngradeBlock']/@value">guppycntCar03SedanDamage2</set>
+<set xpath="/blocks/block[@name='cntCar03SedanDamage0v01']/property[@name='DowngradeBlock']/@value">guppycntCar03SedanDamage2</set>
+<set xpath="/blocks/block[@name='cntCar03SedanDamage0v02']/property[@name='DowngradeBlock']/@value">guppycntCar03SedanDamage2</set>
+<set xpath="/blocks/block[@name='cntCar03SedanDamage0v03']/property[@name='DowngradeBlock']/@value">guppycntCar03SedanDamage2</set>
+<set xpath="/blocks/block[@name='cntCar03SedanDamage0v04']/property[@name='DowngradeBlock']/@value">guppycntCar03SedanDamage2</set>
+<set xpath="/blocks/block[@name='cntCar03SedanDamage0v05']/property[@name='DowngradeBlock']/@value">guppycntCar03SedanDamage2</set>
+<set xpath="/blocks/block[@name='cntCar03SedanDamage0v06']/property[@name='DowngradeBlock']/@value">guppycntCar03SedanDamage2</set>
+
+<append xpath="/blocks/block[@name='cntCar03SedanDamage1v01']" >
+  <property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/>
+</append>
+<append xpath="/blocks/block[@name='cntCar03SedanDamage1v02']" >
+  <property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntCar03SedanDamage1v03']" >
+  <property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntCar03SedanDamage1v04']" >
+  <property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntCar03SedanDamage1v05']" >
+  <property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntCar03SedanDamage1v06']" >
+  <property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/>
+</append>
+
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/property[@class='Explosion']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/property[@class='Explosion']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/property[@class='Explosion']" />
+
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='resourceLeather']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='resourceScrapIron']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='cntCar03SedanDamage0']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='resourceHeadlight']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='resourceMechanicalParts']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='resourceElectricParts']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='resourceElectricParts']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@event='Destroy']" />
+
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='terrStone']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='smallEngine']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='carBattery']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceRadiator']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceOil']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceCloth']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceSpring']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceScrapIron']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='ammoGasCan']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='ammoGasCan']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceScrapIron']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceMechanicalParts']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceElectricParts']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceElectricParts']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@event='Destroy']" />
+
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='terrStone']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='resourceMetalPipe']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='ammoGasCan']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='ammoGasCan']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='resourceHeadlight']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='resourceScrapIron']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='resourceScrapPolymers']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='resourceMechanicalParts']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='resourceElectricParts']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='resourceScrapIron']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@event='Destroy']" />
+<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='khelldonNutsAndBolts']" />
+
 <append xpath="/blocks">	
 
 <block name="spawnerMaster">
@@ -50,32 +133,16 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="170"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DisplayType" value="blockMulti" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/>  
+	<property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/>  
 	<property name="SortOrder1" value="70a0" />  
   <property name="BigDecorationRadius" value="5"/>
-  <property class="Explosion">
-		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
-		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
-		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
-
-		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
-		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
-	</property>
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>
 </block>
@@ -88,32 +155,16 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="170"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DisplayType" value="blockMulti" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/> 
+	<property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/> 
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
-  <property class="Explosion">
-		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
-		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
-		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
-
-		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
-		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
-	</property>
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>  
 </block>
@@ -125,36 +176,19 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="172"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DisplayType" value="blockMulti" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/> 
+	<property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/> 
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
-  <property class="Explosion">
-		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
-		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
-		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
-
-		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
-		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
-	</property>
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>  
 </block>
-
 <block name="guppyVehicleBlockAmbulance">
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockEMSAmbulancePrefab"/>
@@ -163,32 +197,16 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="171"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DisplayType" value="blockMulti" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
 	<property name="DowngradeBlock" value="guppyVehicleBlockAmbulanceDamaged"/> 
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
-  <property class="Explosion">
-		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
-		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
-		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
-
-		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
-		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
-	</property>
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>  
 </block>
@@ -200,7 +218,7 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="173"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DisplayType" value="blockMulti" />
@@ -217,14 +235,104 @@
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
-  <property class="Explosion">
-		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
-		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
-		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
-
-		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
-		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
-	</property>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="guppyVehicleBlockMilitaryTruck">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockMilitaryTruckPrefab"/>
+  <property name="MultiBlockDim" value="3,3,7"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="172"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="guppyVehicleBlockMilitaryTruckDamaged"/> 
+  <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="guppyVehicleBlockMilitaryTruckDamaged">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockMilitaryTruckDamagedPrefab"/>
+  <property name="MultiBlockDim" value="3,3,7"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="173"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+  <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="guppyVehicleBlockMilitaryCar">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockMilitaryCarPrefab"/>
+  <property name="MultiBlockDim" value="3,3,7"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="172"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="guppyVehicleBlockMilitaryCarDamaged"/> 
+  <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="guppyVehicleBlockMilitaryCarDamaged">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockMilitaryCarDamagedPrefab"/>
+  <property name="MultiBlockDim" value="3,3,7"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="173"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+  <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>  
 </block>
@@ -237,31 +345,15 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="171"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DisplayType" value="blockMulti" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
-  <property class="Explosion">
-		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
-		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
-		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
-
-		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
-		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
-	</property>
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>  
 </block>
@@ -302,32 +394,16 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="170"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DisplayType" value="blockMulti" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
 	<property name="DowngradeBlock" value="guppyVehicleBlockMotorCycleDamaged"/> 
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
-  <property class="Explosion">
-		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
-		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
-		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
-
-		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
-		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
-	</property>
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>  
 </block>
@@ -339,7 +415,7 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="173"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DisplayType" value="blockMulti" />
@@ -357,14 +433,6 @@
 	<property name="DowngradeBlock" value="guppyVehicleBlockAmbulanceDamaged"/> 
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
-  <property class="Explosion">
-		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
-		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
-		<property name="BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
-
-		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
-		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
-	</property>
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>
 
@@ -446,6 +514,23 @@
 	<property name="FilterTags" value="floot,fdesign"/>
 </block>
 
-<!--,vehicleGuppyMilitaryCar,vehicleGuppyPickup,vehicleGuppyHotRod,vehicleGuppyMotorCycle,vehicleGuppySedan,vehicleGuppyVan,vehicleGuppyFireTruck,vehicleGuppyAmbulance,vehicleGuppyAmbulanceDamaged,vehicleGuppyPoliceCar"/> -->
+<block name="guppycntCar03SedanDamage2"> <!-- car wreck, no color -->
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="Entities/Vehicles/car03_dmg2_Prefab"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="LootList" value="173"/>  
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
 </append>
 </configs>
