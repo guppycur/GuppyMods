@@ -1,6 +1,0 @@
-<MapInfo>
-  <property name="Name"		value="::Guppycur::"/>
-	<property name="Modes"		value="Survival,SurvivalSP,SurvivalMP,Creative"/>
-	<property name="Description"	value="mmNavezganeSpDesc"/>
-	<property name="HeightMapSize"	value="4096,4096"/>
-</MapInfo>

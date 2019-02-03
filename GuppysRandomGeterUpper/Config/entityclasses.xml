@@ -1,6 +1,0 @@
-<configs>
-	<!-- Updates the Entityclasses to randomize knockdown get up speed -->
-	<!-- By default, it's locked at a set .45 second value.  Fuck that. -->
-	<set xpath="/entity_classes/entity_class/property[@name='KnockdownProneStunDuration']/@value">1.0,10.0</set>
-	<set xpath="/entity_classes/entity_class/property[@name='KnockdownKneelStunDuration']/@value">1.0,10.0</set>
-</configs>
