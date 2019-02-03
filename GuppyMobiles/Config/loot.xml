@@ -50,7 +50,7 @@
         <item group="guppyVehicleRegularWorking" prob=".2" />    
       </lootcontainer>
       <!--EMS Vehicle Blocks -->
-      <lootcontainer id="171" count="1" size="6,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+      <lootcontainer id="171" count="2" size="6,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
         <item group="guppyVehicleRegularDamaged" prob=".4" />
         <item group="guppyVehicleRegularWorking" prob=".2" />  
         <item group="guppyVehicleMedical" prob=".4" />
@@ -62,7 +62,7 @@
         <item group="guppyVehicleLawMil" prob=".2" />      
       </lootcontainer> 
       <!--Damaged Vehicle Blocks -->
-      <lootcontainer id="173" count="1" size="6,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+      <lootcontainer id="173" count="4" size="6,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
         <item name="carChassis" count="1"  prob="1" /> 
         <item name="resourceLeather" count="2,7" prob="0.5" />
         <item name="resourceScrapIron" count="10,20" /> 

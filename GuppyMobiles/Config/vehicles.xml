@@ -944,13 +944,13 @@
 		</property>
 
 		<property class="seat0">
-    <property name="position" value="-.4, .2, .3"/>
+    <property name="position" value="-.4, -.5, .4"/>
 			<property name="rotation" value="-25, 0, 0"/>
 			<property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
 		</property>
 
 		<property class="seat1">
-			<property name="position" value=".4, .2, .3"/>
+			<property name="position" value=".4, -.5, .4"/>
 			<property name="position" value=".4, .2, .3"/>
 			<property name="rotation" value="-25, 0, 0"/>
 			<property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0"/>
