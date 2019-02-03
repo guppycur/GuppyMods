@@ -40,6 +40,10 @@
   <property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/>
 </append>
 
+<append xpath="/blocks/block[@name='tire']" >
+  <property name="CanPickup" value="true" param1="guppyTire"/>
+</append>
+
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/property[@class='Explosion']" />
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/property[@class='Explosion']" />
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/property[@class='Explosion']" />
@@ -111,9 +115,9 @@
         <property name="CreativeMode" value="Dev"/>
 </block>
 
-
 <block name="guppyAutoWorkbench">
-	<property name="Extends" value="woodFrameBlock"/>
+	<property name="Extends" value="workbench"/>
+  	<property name="Class" value="Workstation" />
 	<property name="CreativeMode" value="Player"/>
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyAutoWorkbenchPrefab"/>
@@ -121,6 +125,25 @@
   <property name="MultiBlockDim" value="3,2,2"/>
   <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>  
+  <property name="CustomIcon" value="autoworkbench"/>
+  
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="player,workbench"/>
+	</property>  
+	<property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+	<property name="OpenSound" value="open_workbench" />
+	<property name="CloseSound" value="close_workbench" />
+	<property name="WorkstationJournalTip" value="workbenchTip" />  
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="25" />
+		<property name="resourceMechanicalParts" value="20" />
+		<property name="resourceWood" value="50" />
+	</property>  
+	<property name="TakeDelay" value="15" />  
+	<property name="DescriptionKey" value="workbenchDesc" />
+	<property name="EconomicValue" value="776" />
+	<property name="Group" value="Building,Science" />  
 </block>
 
 <!-- Begin Lootable Blocks -->

@@ -1,0 +1,25 @@
+<configs>
+
+<remove xpath="/blockplaceholders/placeholder[@name='carsRandomHelper']/block[@name='cntCar03SedanDamage2']" />
+
+<append xpath="/blockplaceholders/placeholder[@name='carsRandomHelper']">
+ <block name="guppycntCar03SedanDamage2" prob="3"/>
+</append>
+
+<append xpath="/blockplaceholders">	
+
+	<placeholder name="guppycarsRandomHelper">
+		<block name="guppyVehicleBlockSedan1" prob="0.05"/>
+		<block name="guppyVehicleBlockSedan2" prob="0.05"/>
+		<block name="guppyVehicleBlockPoliceCar" prob="0.03"/>
+		<block name="guppyVehicleBlockAmbulance" prob="0.05"/>
+		<block name="guppyVehicleBlockAmbulanceDamaged" prob="0.05"/>
+		<block name="guppyVehicleBlockFiretruck" prob="0.05"/>
+		<block name="guppyVehicleBlockMilitaryTruck" prob="0.05"/>
+		<block name="guppyVehicleBlockMilitaryTruckDamaged" prob="0.05"/>
+		<block name="guppyVehicleBlockMilitaryCar" prob="0.03"/>
+		<block name="guppyVehicleBlockMilitaryCarDamaged" prob="0.03"/>           
+	</placeholder>
+  
+</append>
+</configs> 

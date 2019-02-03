@@ -41,6 +41,10 @@
     </lootgroup>
 </insertBefore>
 
+<insertAfter xpath="/lootcontainers/lootgroup[@name='automotive']" >
+  <item name="guppyToolRachetSet" count="1,2"/>
+  <item name="guppyToolCompressor" count="1" prob="0.1"/>
+</insertAfter>
 
 <append xpath="/lootcontainers">
 
@@ -74,7 +78,7 @@
         <item name="resourceOil" count="1,3" prob="0.5" />
         <item name="resourceCloth" count="3,7" />
         <item name="resourceSpring" count="2,4" />
-        <item name="ammoGasCan" count="20,120" />
+        <item name="ammoGasCan" count="2,12" />
       </lootcontainer>       
     
 </append>
