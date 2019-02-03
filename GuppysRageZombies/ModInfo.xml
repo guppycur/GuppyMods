@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Guppycur's Rage Zombies" />
+		<Description value="Adds Rage feature to 23 existing vanilla zombies" />
+		<Author value="Guppycur" />
+		<Version value="1.1" />
+		
+	</ModInfo>
+</xml>

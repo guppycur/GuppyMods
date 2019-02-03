@@ -1,0 +1,52 @@
+<configs>
+
+<!-- Testing custom particle on a campfire (classed block) block (Not working) -->
+	<set xpath="/blocks/block[@name='campfire']/property[@name='ParticleName']/@value">#@modfolder:/Resources/XythParticlePack.unity3d?p_Flies_X</set>
+	
+<!-- Testing: custom particle for manual spawning  -->		
+	<append xpath="/blocks">
+		<block name="flies">
+			<property name="Material" value="Mair" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/XythParticlePack.unity3d?p_Flies_X"/>
+			<property name="CustomIcon" value="ui_game_symbol_fliesParticle"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="CanPickup" value="false" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="ImposterExchange" value="imposterCTREighth" param1="29" />
+			<drop event="Destroy" count="0" />
+		</block>
+		
+<!-- Testing: custom particle for biome spawning  (Confirmed working)-->			
+		<block name="fogmist">
+			<property name="Material" value="Mair" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/XythParticlePack.unity3d?p_FogMist_X"/>
+			<property name="CustomIcon" value="ui_game_symbol_fliesParticle"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="CanPickup" value="false" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="ImposterExchange" value="imposterCTREighth" param1="29" />
+			<drop event="Destroy" count="0" />
+		</block>
+		
+<!-- Testing custom particle on a basic classless block  (Not working) -->		
+		<block name="emberPileTest">
+<!--		<property name="Class" value="Particle" /> -->
+			<property name="Material" value="Mwood_weak"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="OutdoorDecor/ember_pile_1" param1="main_mesh"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="ParticleName" value="#@modfolder:Resources/XythParticlePack.unity3d?p_Flies_X"/>
+			<property name="ParticleOffset" value="0,0,0"/>
+			<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+			<!-- <property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/> -->
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceCoal" count="1,2" tag="oreWoodHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="1"/>
+			<property name="FilterTags" value="fdecor,fother,foutdoor"/>
+		</block>
+	</append>
+</configs>

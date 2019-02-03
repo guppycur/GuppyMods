@@ -1,0 +1,39 @@
+<configs>
+	<append xpath="/items">
+		<!-- Guppy's Torch Mod -->
+		<item name="canGrenade">
+			<property name="Class" value="ItemClassTimeBomb"/>
+			<property name="Meshfile" value="Items/Food/can_empty"/>
+			<property name="Material" value="MDynamite"/>
+			<property name="CustomIcon" value="canBoiledWater"/>
+			<property name="HoldType" value="25"/>
+			<property name="Stacknumber" value="10"/> 
+			<property name="CustomIcon" value="GuppysCanGrenade" />
+			<property name="EconomicValue" value="71"/>
+			<property name="Explosion.BlockDamage" value="10"/>
+			<property name="Explosion.EntityDamage" value="25"/>
+			<property name="Explosion.ParticleIndex" value="1"/>
+			<property name="Explosion.RadiusBlocks" value="2"/>
+			<property name="Explosion.RadiusEntities" value="2"/>
+			<property name="Buff" value="bleeding"/>
+			<property name="Buff_chance" value="0.2"/>	
+			<property name="FuseTime" value="2.8"/> 
+			<property name="DropScale" value="1.8"/>
+			<property class="Action0">
+				<property name="Class" value="ThrowAway"/>
+				<property name="Delay" value="0.8"/>
+				<property name="Throw_strength_default" value="8"/>
+				<property name="Throw_strength_max" value="30"/>
+				<property name="Max_strain_time" value="1.5"/>
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+			<property class="Action1"> 
+				<property name="Class" value="Activate"/>
+				<property name="Delay" value="1"/>
+			</property>
+			<property name="ThrowableDecoy" value="true"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CraftingSkillGroup" value="craftSkillScience"/>
+		</item>
+	</append>
+</configs>

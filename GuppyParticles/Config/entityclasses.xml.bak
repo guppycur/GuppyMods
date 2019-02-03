@@ -1,0 +1,6 @@
+<configs>
+<!-- Tests a custom particle on mesh (confirmed to work but 1 layer only) -->
+	<append xpath="/entity_classes/entity_class[starts-with(@name, 'zombieTemplateMale')]" >
+		<property name="ParticleOnSpawn" value="#@modfolder:Resources/XythParticlePack.unity3d?p_FrostShield_X" param1="SetShapeToMesh0"/> 
+	</append>
+</configs>

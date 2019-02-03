@@ -1,0 +1,73 @@
+<configs>
+
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieFemaleFat']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieJoe']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieMoe']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieArlene']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieLab']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieScreamer']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieDarlene']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieMarlene']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieYo']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieSteve']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieBusinessMan']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieBurnt']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieNurse']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieSoldier']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieSkateboarder']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieCheerleader']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieOldTimer']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieBiker']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieFarmer']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+<insertAfter xpath="/entity_classes/entity_class[@name='zombieStripper']/effect_group[@name='Base Effects']/passive_effect[@operation='perc_set']" >
+      <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRage"/>
+</insertAfter>
+
+</configs>

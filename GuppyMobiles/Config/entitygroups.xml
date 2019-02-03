@@ -1,0 +1,18 @@
+<configs>
+<append xpath="/entitygroups">
+
+	<entitygroup name="guppyVehicles">
+		<entity name="vehicleGuppyMilitaryTruck"/>
+		<entity name="vehicleGuppyMilitaryCar"/>
+		<entity name="vehicleGuppyPickup"/>
+		<entity name="vehicleGuppyHotRod"/>
+		<entity name="vehicleGuppyMotorCycle"/>
+		<entity name="vehicleGuppySedan"/>
+		<entity name="vehicleGuppyVan"/>
+		<entity name="vehicleGuppyFireTruck"/>
+		<entity name="vehicleGuppyAmbulance"/>
+		<entity name="vehicleGuppyAmbulanceDamaged"/>
+		<entity name="vehicleGuppyPoliceCar"/>
+	</entitygroup>
+</append>
+</configs>

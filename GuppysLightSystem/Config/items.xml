@@ -1,0 +1,140 @@
+<configs>
+	<append xpath="/items">
+		<item name="handLantern">
+			<property name="Tags" value="weapon,perkExplosiveWeapons"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="Class" value="ItemClassTimeBomb"/>
+			<property name="HoldType" value="12"/>
+			<property name="Meshfile" value="#@modfolder:Resources/GuppysLightSystem.unity3d?GuppyLanternItem.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/GuppysLightSystem.unity3d?GuppyLanternItem.prefab"/>
+			<property name="DropScale" value="2"/>
+			<property name="CustomIcon" value="handLantern" />
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="50"/> <!-- STK torch -->
+			<property name="FuelValue" value="25"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="SoundIdle" value="torch_lp"/>
+			<property name="ThrowableDecoy" value="true"/>	
+			<property name="Weight" value="0"/>
+			<property name="FuelValue" value="60"/>
+			<property name="Explosion.BlockDamage" value="5"/>
+			<property name="Explosion.EntityDamage" value="5"/>
+			<property name="Explosion.ParticleIndex" value="10"/>
+			<property name="Explosion.RadiusBlocks" value="3"/>
+			<property name="Explosion.RadiusEntities" value="4"/>
+			<property name="Explosion.RadiusBuffs" value="3"/> <!-- int, default is same as RadiusBlocks -->
+			<property name="Explosion.BlastPower" value="70"/>
+			<property name="Explosion.DamageBonus.stone" value="0.1"/>
+			<property name="Explosion.DamageBonus.metal" value="0"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<property name="Explosion.DamageBonus.water" value="0"/>
+			<property name="Explosion.DamageBonus.wood" value="6"/>
+			<property name="FuseTime" value="20000"/> <!-- theoretically redundant but I don't want to experiment on this -->
+			<property name="ExplodeOnHit" value="true"/>		
+			<property class="Action0">
+				<property name="Class" value="ThrowAway"/>
+				<property name="Delay" value="1.2"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Throw_strength_default" value="10"/>
+				<property name="Throw_strength_max" value="35"/>
+				<property name="Max_strain_time" value="1"/>
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="PlaceAsBlock"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Blockname" value="PlaceableLanternBlock"/>
+			</property>
+			<property name="Group" value="Basics,Decor/Miscellaneous"/>
+			<property name="LightValue" value="0.35"/>
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="lightSource"/>
+			<property name="AlwaysActive" value="true"/>
+			<property name="DistractionTags" value="zombie,requires_contact"/>
+
+			<effect_group name="Base Effects" tiered="false">
+				<triggered_effect name="onProjectileImpact" action="AddBuff" target="positionAOE" range="4" buff="buffBurningMolotov"/>
+				<display_value name="ExRadius" value="4" />	
+				
+			</effect_group>
+		</item>		
+
+		<item name="handLanternGlass">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="CustomIcon" value="handLanternGlass" />
+			<property name="Material" value="Mglass"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="50"/> <!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="0.5"/>
+			<property name="RepairAmount" value="20"/>
+			<property name="CraftingIngredientTime" value="0.2"/>
+		</item>
+
+		<item name="handLanternCasing">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="CustomIcon" value="handLanternCasing" />
+			<property name="Material" value="Miron_scrap"/>
+			<property name="Weight" value="5"/>
+			<property name="Stacknumber" value="50"/> <!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="0.5"/>
+			<property name="RepairAmount" value="20"/>
+			<property name="CraftingIngredientTime" value="0.2"/>
+		</item>		
+		
+		<item name="handFlashlight">
+			<property name="Tags" value="blunt,melee,light,tool"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="Class" value="ItemClassTorch"/>
+			<property name="HoldType" value="12"/>
+			<property name="Meshfile" value="#@modfolder:Resources/GuppysLightSystem.unity3d?GuppysFlashlight.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/GuppysLightSystem.unity3d?GuppysFlashlight.prefab"/>
+			<property name="CustomIcon" value="PlaceableBuildersLight" />
+			<property name="DropScale" value="1"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="50"/> <!-- STK torch -->
+			<property name="FuelValue" value="25"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="SoundIdle" value="torch_lp"/>
+
+			<property class="Action0">
+				<property name="Class" value="ThrowAway"/>
+				<property name="Delay" value="1.2"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Throw_strength_default" value="10"/>
+				<property name="Throw_strength_max" value="35"/>
+				<property name="Max_strain_time" value="1"/>
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+
+			<property class="Action1">
+				<property name="Class" value="PlaceAsBlock"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Blockname" value="PlaceableFlashLight"/>
+			</property>
+			
+			<property name="Group" value="Basics,Decor/Miscellaneous"/>
+			<!--
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+				<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="10"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="65"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="125,250" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			</effect_group>
+-->
+		</item>		
+		
+	</append>
+</configs>

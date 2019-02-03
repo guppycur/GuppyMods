@@ -1,0 +1,32 @@
+<configs>
+	<append xpath="/blocks">
+		<!-- Guppy's Posters Mod -->
+
+    <block name="guppyWantedPosterSmall"> <!-- This block is not redundant. Joel uses it to test model/texture changes. -->
+      <property name="DisplayType" value="blockHardened" />
+      <property name="Material" value="Mcloth"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Texture" value="293"/>
+      <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+      <property name="Model" value="#@modfolder:Resources/GuppysPosters.unity3d?guppyWantedPosterSmallPrefab"/>
+      <drop event="Destroy" count="0"/>
+      <property name="FilterTags" value="fbuilding,fdesign"/>
+      <property name="SortOrder1" value="40z0"/>
+      <property name="SortOrder2" value="0002"/>
+    </block>
+    <block name="guppyWantedPosterLarge"> <!-- This block is not redundant. Joel uses it to test model/texture changes. -->
+      <property name="DisplayType" value="blockHardened" />
+      <property name="Material" value="Mcloth"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Texture" value="293"/>
+      <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+      <property name="Model" value="#@modfolder:Resources/GuppysPosters.unity3d?guppyWantedPosterLargePrefab"/>
+      <property name="MultiBlockDim" value="2,2,1"/>
+      <drop event="Destroy" count="0"/>
+      <property name="FilterTags" value="fbuilding,fdesign"/>
+      <property name="SortOrder1" value="40z0"/>
+      <property name="SortOrder2" value="0002"/>
+    </block>    
+    
+	</append>
+</configs>

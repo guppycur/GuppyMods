@@ -1,0 +1,8 @@
+﻿<configs>
+<!-- Testing cusstom biome spawned particle (Confirmed working)  -->
+  <remove xpath="/worldgeneration/biomes/biome/weather/ParticleEffect" />
+  <append xpath="/worldgeneration/biomes/biome/weather" >
+    <ParticleEffect prefab="#@modfolder:Resources/XythParticlePack.unity3d?p_FogMist_X" ChunkMargin="7"/>
+  </append>
+
+</configs>

@@ -1,0 +1,20 @@
+<configs>
+	<append xpath="/recipes">
+		<!-- Guppy's Torch Mod -->
+		<recipe name="handLanternGlass" count="1" craft_area="forge" material_based="true">
+			<ingredient name="unit_glass" count="5"/>
+		</recipe>
+		
+		<recipe name="handLanternCasing" count="1" craft_area="forge" material_based="true">
+			<ingredient name="unit_iron" count="15"/>
+		</recipe>		
+		
+		<recipe name="handLantern" count="1">
+			<ingredient name="handLanternCasing" count="1"/>
+			<ingredient name="handLanternGlass" count="1"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>		
+
+	</append>
+	
+</configs>

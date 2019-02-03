@@ -1,0 +1,39 @@
+<configs>
+<!-- This testes a custom particle as a buff with removal  (Confirmed working) -->
+	<append xpath="/buffs">
+		<buff name="flies" icon="ui_game_symbol_infection">
+			<damage_type value="Infection"/>
+			<stack_type value="ignore"/>
+			<duration value="10"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/GuppycurParticles.unity3d?guppyBlueFire" local_offset="0,0,0"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/GuppycurParticles.unity3d?guppyBlueFire"/>
+			</effect_group>
+		</buff>	
+		<buff name="fogMist" icon="ui_game_symbol_infection">
+			<damage_type value="Infection"/>
+			<stack_type value="ignore"/>
+			<duration value="10"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/GuppycurParticles.unity3d?testParticle" local_offset="0,0,0"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/GuppycurParticles.unity3d?testParticle"/>
+			</effect_group>
+		</buff>	
+	</append>
+
+  <append xpath="/buffs/buff[@name='buffStatusCheck']/effect_group">	
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveParticleEffectFromEntity" particle="guppyBlueFire">
+				<requirement name="NotHasBuff" buff="flies"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="guppyBlueFire">
+				<requirement name="HasBuff" buff="flies"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveParticleEffectFromEntity" particle="testParticle">
+				<requirement name="NotHasBuff" buff="fogMist"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="testParticle">
+				<requirement name="HasBuff" buff="fogMist"/>
+			</triggered_effect>
+	</append>
+
+</configs>
