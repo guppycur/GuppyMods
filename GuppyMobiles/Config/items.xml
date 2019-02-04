@@ -17,7 +17,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -29,7 +29,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="10"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -41,7 +41,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -53,7 +53,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="10"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -65,7 +65,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="Mcloth"/> <property name="Weight" value="8"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -77,7 +77,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="Mlead"/> <property name="Weight" value="5"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -89,7 +89,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="15"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -101,7 +101,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -113,7 +113,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="MresourceForgedSteel"/> <property name="Weight" value="5"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -125,7 +125,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="10"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -137,7 +137,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="Mcloth"/> <property name="Weight" value="10"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -149,7 +149,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="25"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -161,7 +161,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -174,7 +174,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="1"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
@@ -186,7 +186,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="2"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>

@@ -1,6 +1,6 @@
 <configs>
   <insertAfter xpath="/worldgeneration/pois/poi/blockontop[@blockname='carsRandomHelper']" >
-       <blockontop blockname="guppycarsRandomHelper" prob="0.0005" rotatemax="3"/>
+       <blockontop blockname="guppycarsRandomHelper" prob="0.001" rotatemax="3"/>
        <blockontop blockname="spawnVehicle" prob="0.000035" rotatemax="3"/>
   </insertAfter> 
 </configs>

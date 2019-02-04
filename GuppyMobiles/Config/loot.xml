@@ -63,7 +63,7 @@
       <lootcontainer id="172" count="1" size="6,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
         <item group="guppyVehicleRegularDamaged" prob=".4" />
         <item group="guppyVehicleRegularWorking" prob=".2" /> 
-        <item group="guppyVehicleLawMil" prob=".2" />      
+        <item group="guppyVehicleLawMil" prob=".4" />      
       </lootcontainer> 
       <!--Damaged Vehicle Blocks -->
       <lootcontainer id="173" count="4" size="6,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
