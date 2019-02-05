@@ -170,6 +170,11 @@
 	<property name="FilterTags" value="floot"/>
 </block>
 
+<block name="guppyVehicleBlockSedan1Smoking">
+  <property name="Extends" value="guppyVehicleBlockSedan1"/>
+  <property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockSedan1SmokingPrefab"/>
+</block>
+
 <block name="guppyVehicleBlockSedan2">
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockSedan2Prefab"/>
@@ -191,6 +196,12 @@
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>  
 </block>
+
+<block name="guppyVehicleBlockSedan2OnFire">
+  <property name="Extends" value="guppyVehicleBlockSedan2"/>
+  <property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockSedan2OnFirePrefab"/>
+</block>
+
 <block name="guppyVehicleBlockPoliceCar">
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockEMSPoliceCarPrefab"/>
@@ -462,20 +473,21 @@
 <!-- Begin Spawn Blocks -->
   
 </block>
+
 <block name="spawnvehicleGuppyMilitaryTruck">
-	<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
-	<property name="CustomIcon" value="metalTrussingRampOld"/>
-	<property name="CreativeMode" value="Dev"/>
-	<property name="Class" value="SpawnEntity"/>
-	<property name="StabilitySupport" value="false"/>
-	<property name="Shape" value="ModelEntity"/>
-	<property name="Mesh" value="models"/>
-	<property name="Model" value="Entities/Electrical/battery_bankPrefab"/> <property name="HandleFace" value="Bottom"/>
-  <property name="SpawnClass" value="vehicleGuppyMilitaryTruck"/> 
-	<property name="FilterTags" value="fdesign"/>
-	<property name="Collide" value="sight"/>
-  <property name="BigDecorationRadius" value="5" />
-</block>
+            <property name="Material" value="Mcloth"/>
+            <property name="Class" value="SpawnEntity"/>
+            <property name="SpawnClass" count="1" value="vehicleGuppyMilitaryTruck"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+            <property name="Mesh" value="models"/>
+            <property name="Model" value="LootContainers/trash_pile01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
+            <property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="MultiBlockDim" value="1,2,1"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="0" prob="0" stick_chance="0"/>
+        </block>
 
 <block name="spawnvehicleGuppyMilitaryCar">
   <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>

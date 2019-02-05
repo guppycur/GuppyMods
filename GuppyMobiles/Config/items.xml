@@ -41,7 +41,7 @@
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="50"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>

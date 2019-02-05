@@ -11,6 +11,8 @@
 	<placeholder name="guppycarsRandomHelper">
 		<block name="guppyVehicleBlockSedan1" prob="0.05"/>
 		<block name="guppyVehicleBlockSedan2" prob="0.05"/>
+		<block name="guppyVehicleBlockSedan1Smoking" prob="0.05"/>
+		<block name="guppyVehicleBlockSedan2OnFire" prob="0.05"/>    
 		<block name="guppyVehicleBlockPoliceCar" prob="0.03"/>
 		<block name="guppyVehicleBlockAmbulance" prob="0.05"/>
 		<block name="guppyVehicleBlockAmbulanceDamaged" prob="0.05"/>
