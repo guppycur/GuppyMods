@@ -4,38 +4,35 @@
 
 <append xpath="/recipes">
 
-	<recipe name="vehicleGuppyPickupPlaceable" count="1" craft_area="guppyAutoWorkbench" >
-		<ingredient name="smallEngine" count="1"/>
-		<ingredient name="carCarburetor" count="1"/>
+	<recipe name="vehicleGuppyPickupPlaceable" count="1" craft_time="600" craft_area="guppyAutoWorkbench" >
+		<ingredient name="carEngineAssembly" count="2"/>
     <ingredient name="carSeats" count="1"/>
-		<ingredient name="carBattery" count="1"/>
-    <ingredient name="carTransmission" count="1"/>
-		<ingredient name="vehicleWheels" count="1"/>
-	</recipe>
-	<recipe name="vehicleGuppyMotorCyclePlaceable" count="1" craft_area="guppyAutoWorkbench" >
-		<ingredient name="smallEngine" count="1"/>
-		<ingredient name="carCarburetor" count="1"/>
-    <ingredient name="carSeats" count="1"/>
-		<ingredient name="carBattery" count="1"/>
-    <ingredient name="carTransmission" count="1"/>
-		<ingredient name="vehicleWheels" count="2"/>
-	</recipe>
-	<recipe name="vehicleGuppySedanPlaceable" count="1" craft_area="guppyAutoWorkbench" >
-		<ingredient name="smallEngine" count="1"/>
-		<ingredient name="carCarburetor" count="1"/>
-    <ingredient name="carSeats" count="1"/>
-		<ingredient name="carBattery" count="1"/>
-    <ingredient name="carTransmission" count="1"/>
+		<ingredient name="carChassis" count="2"/>
 		<ingredient name="vehicleWheels" count="4"/>
+    <ingredient name="resourceHeadlight" count="2"/>
+	</recipe>
+	<recipe name="vehicleGuppyMotorCyclePlaceable" count="1" craft_time="600" craft_area="guppyAutoWorkbench" >
+		<ingredient name="carEngineAssembly" count="1"/>
+    <ingredient name="carSeats" count="1"/>
+		<ingredient name="carChassis" count="1"/>
+		<ingredient name="vehicleWheels" count="4"/>
+    <ingredient name="resourceHeadlight" count="1"/>
+	</recipe>
+	<recipe name="vehicleGuppySedanPlaceable" count="1" craft_time="600" craft_area="guppyAutoWorkbench" >
+		<ingredient name="carEngineAssembly" count="1"/>
+    <ingredient name="carSeats" count="4"/>
+		<ingredient name="carChassis" count="1"/>
+		<ingredient name="vehicleWheels" count="4"/>
+    <ingredient name="resourceHeadlight" count="2"/>
 	</recipe>  
-	<recipe name="guppyAutoWorkbench" count="1" craft_area="workbench" >
+	<recipe name="guppyAutoWorkbench" count="1" craft_time="120" craft_area="workbench" >
 		<ingredient name="meleeToolClawHammer" count="1"/>
     <ingredient name="guppyToolRachetSet" count="1"/>
 		<ingredient name="guppyToolCompressor" count="1"/>
     <ingredient name="guppyToolCarLift" count="1"/>
     <ingredient name="workbench" count="1"/>
 	</recipe>  
- 	<recipe name="guppyToolCarLift" count="1" craft_area="workbench" >
+ 	<recipe name="guppyToolCarLift" count="1" craft_time="60" craft_area="workbench" >
 		<ingredient name="resourceMechanicalParts" count="5"/>
     <ingredient name="resourceElectricParts" count="5"/>
 		<ingredient name="guppyToolCompressor" count="1"/>
@@ -43,38 +40,45 @@
     <ingredient name="resourceForgedSteel" count="20"/>
 	</recipe>   
 
-	<recipe name="carCarburetor" count="1" craft_area="guppyAutoWorkbench" >
+	<recipe name="carCarburetor" count="1" craft_time="15" craft_area="guppyAutoWorkbench" >
 		<ingredient name="damagedcarCarburetor" count="1"/>
 		<ingredient name="resourceMechanicalParts" count="5"/>
 	</recipe>   
-	<recipe name="carSeats" count="1" craft_area="guppyAutoWorkbench" >
+	<recipe name="carSeats" count="1" craft_time="15" craft_area="guppyAutoWorkbench" >
 		<ingredient name="damagedcarSeats" count="1"/>
 		<ingredient name="resourceMechanicalParts" count="1"/>
     <ingredient name="resourceCloth" count="5"/>
 	</recipe> 
-	<recipe name="carCarburetor" count="1" craft_area="guppyAutoWorkbench" >
-		<ingredient name="damagedcarCarburetor" count="1"/>
+	<recipe name="carAltenator" count="1" craft_time="15" craft_area="guppyAutoWorkbench" >
+		<ingredient name="damagedcarAltenator" count="1"/>
 		<ingredient name="resourceMechanicalParts" count="5"/>
 	</recipe> 
-	<recipe name="carBattery" count="1" craft_area="guppyAutoWorkbench" >
+	<recipe name="carBattery" count="1" craft_time="15" craft_area="guppyAutoWorkbench" >
 		<ingredient name="damagedcarBattery" count="1"/>
 		<ingredient name="resourceAcid" count="5"/>
 	</recipe> 
-	<recipe name="carTransmission" count="1" craft_area="guppyAutoWorkbench" >
+	<recipe name="carTransmission" count="1" craft_time="15" craft_area="guppyAutoWorkbench" >
 		<ingredient name="damagedcarTransmission" count="1"/>
 		<ingredient name="resourceMechanicalParts" count="5"/>
     <ingredient name="resourceElectricParts" count="5"/>
 	</recipe> 
-	<recipe name="vehicleWheels" count="1" craft_area="guppyAutoWorkbench" >
+	<recipe name="vehicleWheels" count="1" craft_time="15" craft_area="guppyAutoWorkbench" >
 		<ingredient name="damagedvehicleWheels" count="1"/>
 		<ingredient name="guppyTire" count="1"/>
 	</recipe> 
-	<recipe name="carChassis" count="1" craft_area="guppyAutoWorkbench" >
+	<recipe name="carChassis" count="1" craft_time="120" craft_area="guppyAutoWorkbench" >
 		<ingredient name="damagedcarChassis" count="1"/>
 		<ingredient name="resourceMechanicalParts" count="5"/>
     <ingredient name="resourceForgedIron" count="50"/>
     <ingredient name="resourceForgedSteel" count="20"/>
 	</recipe> 
+	<recipe name="carEngineAssembly" count="1" craft_time="120" craft_area="guppyAutoWorkbench" >
+		<ingredient name="carAltenator" count="1"/>
+		<ingredient name="carCarburetor" count="1"/>
+    <ingredient name="carTransmission" count="1"/>
+    <ingredient name="smallEngine" count="1"/>
+    <ingredient name="carBattery" count="1"/>    
+	</recipe>   
 </append>
 	
 </configs>

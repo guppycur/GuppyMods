@@ -1,13 +1,6 @@
 <configs>
 
 <set xpath="/blocks/block[@name='cntCar03SedanDamage0']/property[@name='LootList']/@value">173</set>
-<set xpath="/blocks/block[@name='cntCar03SedanDamage1']/property[@name='LootList']/@value">173</set>
-
-<set xpath="/blocks/block[@name='cntCar03SedanDamage2']/property[@name='Class']/@value">CarExplodeLoot</set>
-
-<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2']/property[@name='Class']">
-	<property name="LootList" value="173"/>
-</insertAfter>
 
 <set xpath="/blocks/block[@name='cntCar03SedanDamage0']/property[@name='DowngradeBlock']/@value">guppycntCar03SedanDamage2</set>
 <set xpath="/blocks/block[@name='cntCar03SedanDamage0v01']/property[@name='DowngradeBlock']/@value">guppycntCar03SedanDamage2</set>
@@ -44,10 +37,6 @@
   <property name="CanPickup" value="true" param1="guppyTire"/>
 </append>
 
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/property[@class='Explosion']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/property[@class='Explosion']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/property[@class='Explosion']" />
-
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='resourceLeather']" />
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='resourceScrapIron']" />
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='cntCar03SedanDamage0']" />
@@ -57,22 +46,20 @@
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='resourceElectricParts']" />
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@event='Destroy']" />
 
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='terrStone']" />
+<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage0']/property[@name='PassThroughDamage']">
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.15" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarAltenator" count="1" prob="0.25" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carAltenator" count="1" prob="0.05" tag="salvageHarvest"/>  
+  <drop event="Destroy" count="0" />
+</insertAfter>
+
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='smallEngine']" />
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='carBattery']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceRadiator']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceOil']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceCloth']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceSpring']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceScrapIron']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='ammoGasCan']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='ammoGasCan']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceScrapIron']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceMechanicalParts']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceElectricParts']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@name='resourceElectricParts']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage1']/drop[@event='Destroy']" />
-
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='terrStone']" />
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='resourceMetalPipe']" />
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='ammoGasCan']" />
@@ -84,7 +71,19 @@
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='resourceElectricParts']" />
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='resourceScrapIron']" />
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@event='Destroy']" />
-<remove xpath="/blocks/block[@name='cntCar03SedanDamage2']/drop[@name='khelldonNutsAndBolts']" />
+
+<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2']/property[@name='ShowModelOnFall']">
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedsmallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.05" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarCarburetor" count="1" prob="0.25" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carCarburetor" count="1" prob="0.05" tag="salvageHarvest"/>
+  <drop event="Harvest" name="damagedcarTransmission" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carTransmission" count="1" prob="0.05" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedvehicleWheels" count="2" prob="0.5" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleWheels" count="2" prob="0.5" tag="salvageHarvest"/>
+  <drop event="Destroy" name="carChassis" count="1" prob="1" tag="allHarvest"/>
+</insertAfter>
 
 <append xpath="/blocks">	
 
@@ -129,7 +128,7 @@
   
 	<property class="Workstation">
 		<property name="Modules" value="output"/>
-		<property name="CraftingAreaRecipes" value="player,workbench"/>
+		<property name="CraftingAreaRecipes" value="guppyAutoWorkbench"/>
 	</property>  
 	<property name="WorkstationIcon" value="ui_game_symbol_workbench" />
 	<property name="OpenSound" value="open_workbench" />
@@ -163,6 +162,12 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.15" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/> 
+	<drop event="Destroy" count="0"/>  
 	<property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/>  
 	<property name="SortOrder1" value="70a0" />  
   <property name="BigDecorationRadius" value="5"/>
@@ -190,6 +195,12 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.15" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>  
 	<property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/> 
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
@@ -217,6 +228,12 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.15" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/> 
+	<drop event="Destroy" count="0"/>  
 	<property name="DowngradeBlock" value="guppycntCar03SedanDamage2"/> 
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
@@ -238,6 +255,12 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.15" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>   
+  <drop event="Destroy" count="0"/>
 	<property name="DowngradeBlock" value="guppyVehicleBlockAmbulanceDamaged"/> 
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
@@ -259,14 +282,17 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedsmallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.05" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarCarburetor" count="1" prob="0.25" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carCarburetor" count="1" prob="0.05" tag="salvageHarvest"/>
+  <drop event="Harvest" name="damagedcarTransmission" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carTransmission" count="1" prob="0.05" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedvehicleWheels" count="2" prob="0.5" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleWheels" count="2" prob="0.5" tag="salvageHarvest"/>
+  <drop event="Harvest" name="carChassis" count="1" prob="1" tag="allHarvest"/>
+  <drop event="Destroy" count="0"/>
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
 	<property name="ActivationDistance" value="6"/>
@@ -287,6 +313,12 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.15" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>  
+	<drop event="Destroy" count="0"/>  
 	<property name="DowngradeBlock" value="guppyVehicleBlockMilitaryTruckDamaged"/> 
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
@@ -308,14 +340,17 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedsmallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.05" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarCarburetor" count="1" prob="0.25" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carCarburetor" count="1" prob="0.05" tag="salvageHarvest"/>
+  <drop event="Harvest" name="damagedcarTransmission" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carTransmission" count="1" prob="0.05" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedvehicleWheels" count="2" prob="0.5" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleWheels" count="2" prob="0.5" tag="salvageHarvest"/>
+  <drop event="Harvest" name="carChassis" count="1" prob="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>  
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
 	<property name="ActivationDistance" value="6"/>
@@ -336,6 +371,12 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.15" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>  
+	<drop event="Destroy" count="0"/>  
 	<property name="DowngradeBlock" value="guppyVehicleBlockMilitaryCarDamaged"/> 
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
@@ -357,14 +398,17 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedsmallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.05" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarCarburetor" count="1" prob="0.25" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carCarburetor" count="1" prob="0.05" tag="salvageHarvest"/>
+  <drop event="Harvest" name="damagedcarTransmission" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carTransmission" count="1" prob="0.05" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedvehicleWheels" count="2" prob="0.5" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleWheels" count="2" prob="0.5" tag="salvageHarvest"/>
+  <drop event="Harvest" name="carChassis" count="1" prob="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>  
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
 	<property name="ActivationDistance" value="6"/>
@@ -386,6 +430,12 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.15" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>   
+	<drop event="Destroy" count="0"/>  
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
 	<property name="ActivationDistance" value="6"/>
@@ -435,6 +485,10 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.15" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/> 
+	<drop event="Destroy" count="0"/>    
 	<property name="DowngradeBlock" value="guppyVehicleBlockMotorCycleDamaged"/> 
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
@@ -447,34 +501,35 @@
   <property name="MultiBlockDim" value="1,2,3"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Class" value="CarExplodeLoot"/>
+	<property name="Class" value="CarExplode"/>
 	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
-	<property name="LootList" value="173"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DisplayType" value="blockMulti" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedsmallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.05" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarCarburetor" count="1" prob="0.25" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carCarburetor" count="1" prob="0.05" tag="salvageHarvest"/>
+  <drop event="Harvest" name="damagedcarTransmission" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carTransmission" count="1" prob="0.05" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedvehicleWheels" count="1" prob="0.5" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleWheels" count="1" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>  
 	<property name="DowngradeBlock" value="guppyVehicleBlockAmbulanceDamaged"/> 
   <property name="SortOrder1" value="70a0" />
   <property name="BigDecorationRadius" value="5"/>
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>
 
-<!-- Begin Spawn Blocks -->
-  
 </block>
 
-<block name="spawnvehicleGuppyMilitaryTruck">
+<!-- Begin Spawn Blocks -->
+
+<!-- <block name="spawnvehicleGuppyMilitaryTruck">
             <property name="Material" value="Mcloth"/>
             <property name="Class" value="SpawnEntity"/>
             <property name="SpawnClass" count="1" value="vehicleGuppyMilitaryTruck"/>
@@ -528,7 +583,7 @@
 <block name="spawnvehicleGuppyPoliceCar">
   <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
   <property name="SpawnClass" value="vehicleGuppyPoliceCar"/>
-</block>
+</block> -->
 
 <block name="guppycarsRandomHelper">
 	<property name="CustomIcon" value="cntCar03SedanDamage0"/> <property name="CustomIconTint" value="ff8080"/>
@@ -549,22 +604,9 @@
 	<property name="FilterTags" value="floot,fdesign"/>
 </block>
 
-<block name="guppycntCar03SedanDamage2"> <!-- car wreck, no color -->
-	<property name="Class" value="CarExplodeLoot"/>
-	<property name="Material" value="Mmetal"/>
-	<property name="Shape" value="ModelEntity"/>
-	<property name="ImposterDontBlock" value="true"/>
-	<property name="IsTerrainDecoration" value="true"/>
-	<property name="Place" value="TowardsPlacer"/>
-	<property name="Model" value="Entities/Vehicles/car03_dmg2_Prefab"/>
-	<property name="DisplayType" value="blockMulti" />
-	<property name="MultiBlockDim" value="2,2,6"/>
-	<property name="ShowModelOnFall" value="false"/>
-	<property name="LootList" value="173"/>  
-	<property name="BigDecorationRadius" value="5"/>
-	<property name="CanDecorateOnSlopes" value="false"/>
-	<property name="ActivationDistance" value="6"/>
-	<property name="FilterTags" value="floot"/>
+<block name="guppycntCar03SedanDamage2">
+	<property name="Extends" value="cntCar03SedanDamage2"/>
+	<property name="Class" value="CarExplode"/>
 </block>
 
 </append>

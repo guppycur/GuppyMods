@@ -18,31 +18,67 @@
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
       <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
-      <property name="Stacknumber" value="5"/>
+      <property name="Stacknumber" value="16"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
       <property name="CraftingIngredientExp" value="15"/>
       <property name="CraftingIngredientTime" value="2"/>
       <property name="CustomIcon" value="tire"/>
     </item>  
-    <item name="guppyToolCarLift">
+    <item name="carAltenator">
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="10"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
       <property name="Stacknumber" value="5"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
       <property name="CraftingIngredientExp" value="15"/>
       <property name="CraftingIngredientTime" value="2"/>
+      <property name="CustomIcon" value="altenator"/>
+    </item>   
+    <item name="damagedcarAltenator">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="5"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+      <property name="CustomIcon" value="altenator"/> <property name="CustomIconTint" value="ff0000"/>
+    </item>       
+    <item name="guppyToolCarLift">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="10"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
       <property name="CustomIcon" value="carlift"/>
-    </item>     
+    </item>   
+    <item name="carEngineAssembly">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="50"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+      <property name="CustomIcon" value="engineassembly"/>
+    </item>      
     <item name="damagedsmallEngine">
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
       <property name="Material" value="Miron_scrap"/> <property name="Weight" value="50"/>
-      <property name="Stacknumber" value="5"/>
+      <property name="Stacknumber" value="1"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
       <property name="CraftingIngredientExp" value="15"/>
@@ -66,7 +102,7 @@
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
       <property name="Material" value="Mcloth"/> <property name="Weight" value="8"/>
-      <property name="Stacknumber" value="5"/>
+      <property name="Stacknumber" value="8"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
       <property name="CraftingIngredientExp" value="15"/>
@@ -90,7 +126,7 @@
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
       <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="15"/>
-      <property name="Stacknumber" value="5"/>
+      <property name="Stacknumber" value="1"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
       <property name="CraftingIngredientExp" value="15"/>
@@ -102,7 +138,7 @@
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
       <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
-      <property name="Stacknumber" value="5"/>
+      <property name="Stacknumber" value="16"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
       <property name="CraftingIngredientExp" value="15"/>
@@ -114,7 +150,7 @@
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
       <property name="Material" value="MresourceForgedSteel"/> <property name="Weight" value="5"/>
-      <property name="Stacknumber" value="5"/>
+      <property name="Stacknumber" value="1"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
       <property name="CraftingIngredientExp" value="15"/>
@@ -138,7 +174,7 @@
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
       <property name="Material" value="Mcloth"/> <property name="Weight" value="10"/>
-      <property name="Stacknumber" value="5"/>
+      <property name="Stacknumber" value="8"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
       <property name="CraftingIngredientExp" value="15"/>
@@ -150,7 +186,7 @@
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
       <property name="Material" value="MmechanicalParts"/> <property name="Weight" value="25"/>
-      <property name="Stacknumber" value="5"/>
+      <property name="Stacknumber" value="1"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
       <property name="CraftingIngredientExp" value="15"/>
@@ -162,7 +198,7 @@
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
       <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
-      <property name="Stacknumber" value="5"/>
+      <property name="Stacknumber" value="1"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
       <property name="CraftingIngredientExp" value="15"/>
@@ -175,7 +211,7 @@
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
       <property name="Material" value="Miron_scrap"/> <property name="Weight" value="1"/>
-      <property name="Stacknumber" value="5"/>
+      <property name="Stacknumber" value="15"/>
       <property name="EconomicValue" value="32"/>
       <property name="Group" value="Resources"/>
       <property name="CraftingIngredientExp" value="15"/>
@@ -199,8 +235,9 @@
 	<property name="Tags" value="vehicle"/>
 	<property name="DescriptionKey" value="vehiclePlaceableGroupDesc"/>
 	<property name="HoldType" value="7"/>
+  <property name="CustomIcon" value="carPickup"/>
 	<property name="HoldingItemHidden" value="true"/>
-	<property name="Meshfile" value="Entities/Vehicles/minibike_Prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/GuppyMobilesCars.unity3d?guppyVehiclePickup"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="EconomicValue" value="6000"/>
@@ -217,8 +254,9 @@
 	<property name="Tags" value="vehicle"/>
 	<property name="DescriptionKey" value="vehiclePlaceableGroupDesc"/>
 	<property name="HoldType" value="7"/>
+  <property name="CustomIcon" value="carCycle"/>
 	<property name="HoldingItemHidden" value="true"/>
-	<property name="Meshfile" value="Entities/Vehicles/minibike_Prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/GuppyMobilesCycles.unity3d?guppyVehicleMotorCycle"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="EconomicValue" value="6000"/>
@@ -235,8 +273,9 @@
 	<property name="Tags" value="vehicle"/>
 	<property name="DescriptionKey" value="vehiclePlaceableGroupDesc"/>
 	<property name="HoldType" value="7"/>
+  <property name="CustomIcon" value="carSedan"/>
 	<property name="HoldingItemHidden" value="true"/>
-	<property name="Meshfile" value="Entities/Vehicles/minibike_Prefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/GuppyMobilesCars.unity3d?guppyVehicleSedan"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="EconomicValue" value="6000"/>

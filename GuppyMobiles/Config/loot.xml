@@ -1,30 +1,11 @@
 <configs>
 
+<set xpath="/lootcontainers/lootgroup[@name='automotive']/item[@name='ammoGasCan']/@count">5,30</set>
+
 <insertBefore xpath="/lootcontainers/lootcontainer[@id='1']" >
-
-    <lootgroup name="guppyVehicleRegularDamaged" count="1">
-      <item name="damagedsmallEngine" count="1" prob=".2" />
-      <item name="damagedcarCarburetor" count="1" prob=".2" />
-      <item name="damagedcarSeats" count="1" prob=".2" />
-      <item name="damagedcarBattery" count="1" prob=".2" />
-      <item name="damagedcarTransmission" count="1" prob=".2" />
-      <item name="damagedvehicleWheels" count="1" prob=".2" />
-    </lootgroup>
-
-    <lootgroup name="guppyVehicleRegularWorking" count="1">
-      <item name="smallEngine" count="1" prob=".2" />
-      <item name="carCarburetor" count="1" prob=".2" />
-      <item name="carSeats" count="1" prob=".2" />
-      <item name="carBattery" count="1" prob=".2" />
-      <item name="carTransmission" count="1" prob=".2" />
-      <item name="vehicleWheels" count="1" prob=".2" />
-    </lootgroup>
-
     <lootgroup name="guppyVehicleMedical" count="1">
-      <item group="guppyVehicleRegularDamaged" count="1" />
-      <item group="guppyVehicleRegularWorking" prob=".2" />
-      <item group="rareMedicine" count="1" prob=".2" />
-      <item group="medicine" count="1" prob=".2" />
+      <item group="rareMedicine" count="1" prob=".4" />
+      <item group="medicine" count="1" prob=".3" />
       <item group="cannedfood" count="1" prob=".1" />  
     </lootgroup>
 
@@ -41,44 +22,43 @@
     </lootgroup>
 </insertBefore>
 
-<insertAfter xpath="/lootcontainers/lootgroup[@name='automotive']" >
-  <item name="guppyToolRachetSet" count="1,2"/>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='automotive']/item[@name='resourceHubcap']" >
+  <item name="guppyToolRachetSet" count="1,2" prob="1"/>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='automotive']/item[@name='meleeToolFlashlight02']" >
   <item name="guppyToolCompressor" count="1" prob="0.1"/>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='rareAutomotive']/item[@name='vehicleWheels']" >
+  <item name="guppyToolRachetSet" count="1,2" prob="1"/>
+  <item name="guppyToolCompressor" count="1" prob="0.1"/>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='tools']/item[@name='resourceRepairKit']" >
+  <item name="guppyToolRachetSet" count="1" prob="0.41"/>
 </insertAfter>
 
 <append xpath="/lootcontainers">
 
       <!--Vehicle Blocks -->
-      <lootcontainer id="170" count="1" size="6,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
-        <item group="guppyVehicleRegularDamaged" prob=".4" />
-        <item group="guppyVehicleRegularWorking" prob=".2" />    
+      <lootcontainer id="170" count="1" size="6,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+         <item group="automotive+tools+junk"/>
+         <item name="armorMiningHelmet" prob="0.035"/>
+         <item group="ammo"/>         
       </lootcontainer>
       <!--EMS Vehicle Blocks -->
-      <lootcontainer id="171" count="2" size="6,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
-        <item group="guppyVehicleRegularDamaged" prob=".4" />
-        <item group="guppyVehicleRegularWorking" prob=".2" />  
-        <item group="guppyVehicleMedical" prob=".4" />
+      <lootcontainer id="171" count="2" size="6,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+         <item group="guppyVehicleMedical" prob=".4" />
+         <item group="automotive+tools+junk"/>        
       </lootcontainer>
       <!--Police/Military Vehicle Blocks -->
-      <lootcontainer id="172" count="1" size="6,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
-        <item group="guppyVehicleRegularDamaged" prob=".4" />
-        <item group="guppyVehicleRegularWorking" prob=".2" /> 
-        <item group="guppyVehicleLawMil" prob=".4" />      
+      <lootcontainer id="172" count="1" size="6,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+         <item group="guppyVehicleLawMil" prob=".4" /> 
+         <item group="automotive+tools+junk"/>        
       </lootcontainer> 
       <!--Damaged Vehicle Blocks -->
-      <lootcontainer id="173" count="4" size="6,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
-        <item name="carChassis" count="1"  prob="1" /> 
-        <item name="resourceLeather" count="2,7" prob="0.5" />
-        <item name="resourceScrapIron" count="10,20" /> 
-        <item name="resourceHeadlight" count="1,2" prob="0.2" /> 
-        <item name="resourceMechanicalParts" count="0,2" prob="0.1" /> 
-        <item name="resourceElectricParts" count="0,2" prob="0.1" /> 
-        <item name="resourceElectricParts" count="0,2" prob="0.1" /> 
-        <item name="resourceRadiator" count="1" prob="0.5" />
-        <item name="resourceOil" count="1,3" prob="0.5" />
-        <item name="resourceCloth" count="3,7" />
-        <item name="resourceSpring" count="2,4" />
-        <item name="ammoGasCan" count="2,12" />
+      <lootcontainer id="173" count="4" size="6,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+        <item group="automotive+tools+junk"/>
+        <item name="armorMiningHelmet" prob="0.035"/>
+        <item group="ammo"/>         
       </lootcontainer>       
     
 </append>
