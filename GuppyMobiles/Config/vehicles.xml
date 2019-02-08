@@ -5,8 +5,8 @@
 
 		<property name="cameraDistance" value="5.5, 9"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
-		<property name="motorTorqueMinQ" value="6000"/>
-		<property name="motorTorqueMaxQ" value="12000"/>
+		<property name="motorTorqueMinQ" value="4000"/>
+		<property name="motorTorqueMaxQ" value="6000"/>
 		<property name="brakeTorque" value="5000"/>
 		<property name="upAngleMax" value="80"/>
 		<property name="upForce" value="1"/>
@@ -207,7 +207,7 @@
 		<property name="cameraDistance" value="3.5, 5"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
 		<property name="motorTorqueMinQ" value="2000"/>
-		<property name="motorTorqueMaxQ" value="3000"/>
+		<property name="motorTorqueMaxQ" value="3800"/>
 		<property name="brakeTorque" value="4000"/>
 		<property name="upAngleMax" value="70"/>
 		<property name="upForce" value="1"/>
@@ -339,7 +339,7 @@
 		<property name="cameraDistance" value="9.5, 14"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
 		<property name="motorTorqueMinQ" value="6000"/>
-		<property name="motorTorqueMaxQ" value="12000"/>
+		<property name="motorTorqueMaxQ" value="9000"/>
 		<property name="brakeTorque" value="3000"/>
 		<property name="upAngleMax" value="80"/>
 		<property name="upForce" value="1"/>
@@ -540,7 +540,7 @@
 		<property name="cameraDistance" value="5.5, 7"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
 		<property name="motorTorqueMinQ" value="8000"/>
-		<property name="motorTorqueMaxQ" value="12000"/>
+		<property name="motorTorqueMaxQ" value="9000"/>
 		<property name="brakeTorque" value="5000"/>
 		<property name="upAngleMax" value="80"/>
 		<property name="upForce" value="1"/>
@@ -794,7 +794,7 @@
 		</property>
 
 		<property class="seat1">
-			<property name="position" value="-.4, .66, 1"/>
+			<property name="position" value=".4, .66, 1"/>
 			<property name="rotation" value="-25, 0, 0"/>
 			<property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0"/>
 		</property>
@@ -852,7 +852,7 @@
 		<property name="cameraDistance" value="5.5, 7"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
 		<property name="motorTorqueMinQ" value="8000"/>
-		<property name="motorTorqueMaxQ" value="12000"/>
+		<property name="motorTorqueMaxQ" value="15000"/>
 		<property name="brakeTorque" value="5000"/>
 		<property name="upAngleMax" value="80"/>
 		<property name="upForce" value="1"/>
@@ -1008,8 +1008,8 @@
 
 		<property name="cameraDistance" value="5.5, 7"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
-		<property name="motorTorqueMinQ" value="8000"/>
-		<property name="motorTorqueMaxQ" value="12000"/>
+		<property name="motorTorqueMinQ" value="6000"/>
+		<property name="motorTorqueMaxQ" value="9000"/>
 		<property name="brakeTorque" value="5000"/>
 		<property name="upAngleMax" value="80"/>
 		<property name="upForce" value="1"/>
@@ -1164,8 +1164,8 @@
 
 		<property name="cameraDistance" value="5.5, 7"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
-		<property name="motorTorqueMinQ" value="8000"/>
-		<property name="motorTorqueMaxQ" value="12000"/>
+		<property name="motorTorqueMinQ" value="6000"/>
+		<property name="motorTorqueMaxQ" value="9000"/>
 		<property name="brakeTorque" value="5000"/>
 		<property name="upAngleMax" value="80"/>
 		<property name="upForce" value="1"/>
@@ -1464,8 +1464,8 @@
 
 		<property name="cameraDistance" value="5.5, 7"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
-		<property name="motorTorqueMinQ" value="8000"/>
-		<property name="motorTorqueMaxQ" value="12000"/>
+		<property name="motorTorqueMinQ" value="4000"/>
+		<property name="motorTorqueMaxQ" value="8000"/>
 		<property name="brakeTorque" value="5000"/>
 		<property name="upAngleMax" value="80"/>
 		<property name="upForce" value="1"/>
@@ -1613,8 +1613,8 @@
 
 		<property name="cameraDistance" value="5.5, 7"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
-		<property name="motorTorqueMinQ" value="8000"/>
-		<property name="motorTorqueMaxQ" value="12000"/>
+		<property name="motorTorqueMinQ" value="4000"/>
+		<property name="motorTorqueMaxQ" value="8000"/>
 		<property name="brakeTorque" value="5000"/>
 		<property name="upAngleMax" value="80"/>
 		<property name="upForce" value="1"/>

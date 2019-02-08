@@ -1,13 +1,17 @@
 <configs>
 
-<append xpath="/items/item[@name='smallEngine']" >
-  <property name="CustomIcon" value="engine"/>
-</append>
 <append xpath="/items/item[@name='carBattery']" >
   <property name="CustomIcon" value="battery"/>
 </append>
+<append xpath="/items/item[@name='vehicleMinibikeChassis']" >
+  <property name="CustomIcon" value="vehicleMinibikeChassis"/>
+</append>
+<append xpath="/items/item[@name='vehicleMinibikeHandlebars']" >
+  <property name="CustomIcon" value="vehicleMinibikeHandlebars"/>
+</append>
 <append xpath="/items/item[@name='vehicleWheels']" >
   <property name="CustomIcon" value="wheels"/>
+  <property name="Stacknumber" value="16"/>
 </append>
 
 
@@ -72,8 +76,44 @@
       <property name="CraftingIngredientExp" value="15"/>
       <property name="CraftingIngredientTime" value="2"/>
       <property name="CustomIcon" value="engineassembly"/>
-    </item>      
-    <item name="damagedsmallEngine">
+    </item>    
+    <item name="carElectricalAssembly">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="50"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+      <property name="CustomIcon" value="electricalassembly"/>
+    </item>  
+    <item name="carBodyAssembly">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="50"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+      <property name="CustomIcon" value="bodyassembly"/>
+    </item>    
+    <item name="carEngine">
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      <property name="Material" value="Miron_scrap"/> <property name="Weight" value="50"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="EconomicValue" value="32"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientExp" value="15"/>
+      <property name="CraftingIngredientTime" value="2"/>
+      <property name="CustomIcon" value="engine"/>
+    </item>    
+    <item name="damagedcarEngine">
       <property name="HoldType" value="45"/>
       <property name="Meshfile" value="Items/Misc/sackPrefab"/>
       <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>

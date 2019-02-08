@@ -26,11 +26,11 @@
   <item name="guppyToolRachetSet" count="1,2" prob="1"/>
 </insertAfter>
 <insertAfter xpath="/lootcontainers/lootgroup[@name='automotive']/item[@name='meleeToolFlashlight02']" >
-  <item name="guppyToolCompressor" count="1" prob="0.1"/>
+  <item name="guppyToolCompressor" count="1" prob="0.4"/>
 </insertAfter>
 <insertAfter xpath="/lootcontainers/lootgroup[@name='rareAutomotive']/item[@name='vehicleWheels']" >
   <item name="guppyToolRachetSet" count="1,2" prob="1"/>
-  <item name="guppyToolCompressor" count="1" prob="0.1"/>
+  <item name="guppyToolCompressor" count="1" prob="0.4"/>
 </insertAfter>
 <insertAfter xpath="/lootcontainers/lootgroup[@name='tools']/item[@name='resourceRepairKit']" >
   <item name="guppyToolRachetSet" count="1" prob="0.41"/>
