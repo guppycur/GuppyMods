@@ -17,6 +17,8 @@
 		<block name="guppyVehicleBlockAmbulance" prob="0.05"/>
 		<block name="guppyVehicleBlockAmbulanceDamaged" prob="0.05"/>
 		<block name="guppyVehicleBlockFiretruck" prob="0.05"/>
+    <block name="guppyVehicleBlockBigRigDamaged" prob="0.05"/>
+    <block name="guppyVehicleBlockBigRig" prob="0.05"/>
 		<block name="guppyVehicleBlockMilitaryTruck" prob="0.05"/>
 		<block name="guppyVehicleBlockMilitaryTruckDamaged" prob="0.05"/>
 		<block name="guppyVehicleBlockMilitaryCar" prob="0.03"/>
