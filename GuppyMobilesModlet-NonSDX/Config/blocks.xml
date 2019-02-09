@@ -471,6 +471,42 @@
 	<property name="ActivationDistance" value="8"/>
 	<property name="FilterTags" value="floot,fdesign"/>
 </block>
+
+<block name="guppycntCar03SedanDamage2">
+	<property name="Extends" value="cntCar03SedanDamage2"/>
+	<property name="Class" value="CarExplode"/>
+</block>
+
+<block name="guppyTrafficCone">
+	<property name="Material" value="Mplastics"/>
+	<property name="Weight" value="16"/>
+	<property name="Texture" value="282"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?TrafficCone02Prefab"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="1,2"/>
+	<property name="FilterTags" value="fdecor,fother,foutdoor"/>
+  <property name="CanPickup" value="true" param1="guppyTrafficCone"/>
+  <property name="CustomIcon" value="trafficcone"/>
+</block>
+<block name="guppyTrafficConeKnockedDown">
+	<property name="Material" value="Mplastics"/>
+	<property name="Weight" value="16"/>
+	<property name="Texture" value="282"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?TrafficCone02KnockedDownPrefab"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="1,2"/>
+	<property name="FilterTags" value="fdecor,fother,foutdoor"/>
+  <property name="CanPickup" value="true" param1="guppyTrafficCone"/>
+  <property name="CustomIcon" value="trafficcone"/>  
+</block>
 <!--,vehicleGuppyMilitaryCar,vehicleGuppyPickup,vehicleGuppyHotRod,vehicleGuppyMotorCycle,vehicleGuppySedan,vehicleGuppyVan,vehicleGuppyFireTruck,vehicleGuppyAmbulance,vehicleGuppyAmbulanceDamaged,vehicleGuppyPoliceCar"/> -->
 </append>
 </configs>
