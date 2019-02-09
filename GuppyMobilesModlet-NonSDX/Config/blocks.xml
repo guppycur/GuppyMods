@@ -452,6 +452,10 @@
   <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
   <property name="SpawnClass" value="vehicleGuppyPoliceCar"/>
 </block>
+<block name="spawnvehicleGuppyBigRig">
+  <property name="Extends" value="spawnvehicleGuppyMilitaryTruck"/>
+  <property name="SpawnClass" value="vehicleGuppyBigRig"/>
+</block>
 
 <block name="guppycarsRandomHelper">
 	<property name="CustomIcon" value="cntCar03SedanDamage0"/> <property name="CustomIconTint" value="ff8080"/>
