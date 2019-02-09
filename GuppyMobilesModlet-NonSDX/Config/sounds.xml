@@ -1,0 +1,67 @@
+<configs>
+
+<append xpath="/Sounds">
+
+  <SoundDataNode name="BellBike"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+    <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+    <AudioClip ClipName="#@modfolder:Resources/GuppyMobilesSounds.unity3d?BellBike"/>
+      <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+  </SoundDataNode>
+
+  <SoundDataNode name="HornBattle"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+    <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+    <AudioClip ClipName="#@modfolder:Resources/GuppyMobilesSounds.unity3d?HornBattle"/>
+      <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+  </SoundDataNode>
+
+  <SoundDataNode name="HornCarLong"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+    <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+    <AudioClip ClipName="#@modfolder:Resources/GuppyMobilesSounds.unity3d?HornCarLong"/>
+      <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+  </SoundDataNode>
+
+  <SoundDataNode name="HornDixie"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+    <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+    <AudioClip ClipName="#@modfolder:Resources/GuppyMobilesSounds.unity3d?HornDixie"/>
+      <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+  </SoundDataNode>
+
+  <SoundDataNode name="HornHonk"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+    <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+    <AudioClip ClipName="#@modfolder:Resources/GuppyMobilesSounds.unity3d?HornHonk"/>
+      <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+  </SoundDataNode>
+
+  <SoundDataNode name="HornHuge"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+    <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+    <AudioClip ClipName="#@modfolder:Resources/GuppyMobilesSounds.unity3d?HornHuge"/>
+      <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+  </SoundDataNode>
+
+  <SoundDataNode name="HornShort"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+    <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+    <AudioClip ClipName="#@modfolder:Resources/GuppyMobilesSounds.unity3d?HornShort"/>
+      <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+  </SoundDataNode>
+
+  <SoundDataNode name="SirenFire"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+    <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+    <AudioClip ClipName="#@modfolder:Resources/GuppyMobilesSounds.unity3d?SirenFire"/>
+      <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+  </SoundDataNode>
+
+  <SoundDataNode name="SirenPolice"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+    <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+    <AudioClip ClipName="#@modfolder:Resources/GuppyMobilesSounds.unity3d?SirenPolice"/>
+      <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+  </SoundDataNode>
+
+  <SoundDataNode name="StupidSound"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+    <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+    <AudioClip ClipName="#@modfolder:Resources/GuppyMobilesSounds.unity3d?StupidSound"/>
+      <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+  </SoundDataNode>
+
+</append>
+
+</configs>

@@ -31,7 +31,6 @@
 	<property name="PassThroughDamage" value="true"/>
 	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
@@ -51,7 +50,10 @@
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>
 </block>
-
+<block name="guppyVehicleBlockSedan1Smoking">
+  <property name="Extends" value="guppyVehicleBlockSedan1"/>
+  <property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockSedan1SmokingPrefab"/>
+</block>
 <block name="guppyVehicleBlockSedan2">
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockSedan2Prefab"/>
@@ -69,7 +71,6 @@
 	<property name="PassThroughDamage" value="true"/>
 	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
@@ -89,6 +90,10 @@
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>  
 </block>
+<block name="guppyVehicleBlockSedan2OnFire">
+  <property name="Extends" value="guppyVehicleBlockSedan2"/>
+  <property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockSedan2OnFirePrefab"/>
+</block>
 <block name="guppyVehicleBlockPoliceCar">
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockEMSPoliceCarPrefab"/>
@@ -106,7 +111,6 @@
 	<property name="PassThroughDamage" value="true"/>
 	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
@@ -144,7 +148,6 @@
 	<property name="PassThroughDamage" value="true"/>
 	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
@@ -181,7 +184,6 @@
 	<property name="PassThroughDamage" value="true"/>
 	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
@@ -200,7 +202,61 @@
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>  
 </block>
-
+<block name="guppyVehicleBlockBigRig">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockCarBigRigPrefab"/>
+  <property name="MultiBlockDim" value="3,3,7"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="172"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/> 
+	<property name="DowngradeBlock" value="guppyVehicleBlockBigRigDamaged"/> 
+  <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="guppyVehicleBlockBigRigDamaged">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockCarBigRigDamagedPrefab"/>
+  <property name="MultiBlockDim" value="3,3,7"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="173"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/> 
+  <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
 <block name="guppyVehicleBlockFiretruck">
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockEMSFiretruckPrefab"/>
@@ -218,7 +274,6 @@
 	<property name="PassThroughDamage" value="true"/>
 	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
@@ -256,7 +311,6 @@
 	<property name="PassThroughDamage" value="true"/>
 	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
@@ -283,7 +337,6 @@
 	<property name="PassThroughDamage" value="true"/>
 	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
@@ -320,7 +373,6 @@
 	<property name="PassThroughDamage" value="true"/>
 	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-	<drop event="Harvest" name="cntCar03SedanDamage0" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>

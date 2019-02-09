@@ -13,5 +13,8 @@
      <blockontop blockname="spawnvehicleGuppyAmbulance" prob="0.00001" rotatemax="3"/>
      <blockontop blockname="spawnvehicleGuppyAmbulanceDamaged" prob="0.00002" rotatemax="3"/>
      <blockontop blockname="spawnvehicleGuppyPoliceCar" prob="0.00002" rotatemax="3"/>
+     <blockontop blockname="spawnvehicleGuppyBigRig" prob="0.00002" rotatemax="3"/>
+     <blockontop blockname="guppyTrafficConeKnockedDown" prob="0.000085" rotatemax="7"/>
+     <blockontop blockname="guppyTrafficCone" prob="0.000035" rotatemax="7"/>
 </insertAfter> 
 </configs>
