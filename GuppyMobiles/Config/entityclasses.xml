@@ -1,5 +1,24 @@
 <configs>
 <append xpath="/entity_classes">	
+<entity_class name="vehicleLichti">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/LichtiCars.unity3d?LichtiCar"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="77"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
 
 <entity_class name="vehicleGuppyMilitaryTruck">
 	<property name="Tags" value="vehicle"/>
@@ -86,6 +105,25 @@
 	<property name="Class" value="EntityMinibike"/>
 	<property name="Parent" value="Cars"/>
 	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesCycles.unity3d?guppyVehicleMotorCycle"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="77"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+<entity_class name="vehicleGuppyMotorCycle2">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityMinibike"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesCycles.unity3d?guppyVehicleMotorCycle2"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="SurfaceCategory" value="metal"/>
 	<property name="IgnoreTrigger" value="true"/>
