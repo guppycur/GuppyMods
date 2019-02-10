@@ -1,0 +1,7 @@
+<configs>
+
+  <append xpath="/worldgeneration/biomes/biome[@name='wasteland']/decorations">
+      <decoration type="block" blockname="guppyRadZoneSign" prob=".003" rotatemax="3"/>
+  </append>
+  
+</configs>
