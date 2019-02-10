@@ -1,0 +1,67 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="handRadDampener">
+			<property name="Tags" value="blunt,melee,light,tool"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="Class" value="ItemClassTorch"/>
+			<property name="HoldType" value="12"/>
+			<property name="Meshfile" value="#@modfolder:Resources/RadDampener.unity3d?HandDampener.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/RadDampener.unity3d?HandDampener.prefab"/>
+			<property name="CustomIcon" value="torchitem" />
+			<property name="DropScale" value=".4"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="50"/> <!-- STK torch -->
+			<property name="FuelValue" value="25"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="SoundIdle" value="torch_lp"/>
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value="0.1"/>
+				<property name="Sound_start" value="torch_swoosh"/>
+				<property name="DamageType" value="Heat"/>
+				<property name="Buff" value="buffBurningElement"/>
+				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="ThrowAway"/>
+				<property name="Delay" value="1.2"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Throw_strength_default" value="10"/>
+				<property name="Throw_strength_max" value="35"/>
+				<property name="Max_strain_time" value="1"/>
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+			<property name="Group" value="Basics,Decor/Miscellaneous"/>
+			<property name="LightValue" value="0.85"/>
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="lightSource"/>
+			<property name="AlwaysActive" value="true"/>
+			<property name="ThrowableDecoy" value="true"/>
+			<property name="DistractionTags" value="zombie,requires_contact"/>
+
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="1"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="51"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="4"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			
+				<passive_effect name="DistractionRadius" operation="base_set" value="45"/>
+				<passive_effect name="DistractionLifetime" operation="base_set" value="1"/>
+				<passive_effect name="DistractionStrength" operation="base_set" value="100"/>	
+				
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="RemoveRadRegenBuff"/>
+				<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" target="self" buff="AddRadRegenBuff"/>
+				
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="RemoveRadRegenBuff"/>
+				<triggered_effect trigger="onSelfEquipStop" action="AddBuff" target="self" buff="AddRadRegenBuff"/>
+		
+			</effect_group>
+	
+		</item>		
+	</append>
+</configs>

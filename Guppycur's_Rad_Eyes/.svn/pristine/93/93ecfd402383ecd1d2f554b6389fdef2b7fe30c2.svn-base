@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<configs>
+	<remove xpath="/entity_classes/entity_class[@name='zombieWightRadiated']/property[@name='ReplaceMaterial0']"/>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>
+	
+	<remove xpath="/entity_classes/entity_class[@name='zombieBoeRadiated']/property[@name='ReplaceMaterial0']"/>
+	<set xpath="/entity_classes/entity_class[@name='zombieBoeRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieJoeRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieJoeRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieMoeRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieMoeRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']/property[@name='ReplaceMaterial2']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieLabRadiated']/property[@name='ReplaceMaterial0']"/>
+	<set xpath="/entity_classes/entity_class[@name='zombieLabRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieDarleneRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieDarleneRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieMarleneRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieMarleneRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieYoRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieYoRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieSteveRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieSteveRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieSpiderRadiated']/property[@name='ReplaceMaterial0']"/>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='ReplaceMaterial0']"/>
+	<set xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']/property[@name='ReplaceMaterial1']"/>
+	<set xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']/property[@name='ReplaceMaterial0']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieSkateboarderRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieSkateboarderRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieCheerleaderRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieCheerleaderRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieOldTimerRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieOldTimerRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+	<remove xpath="/entity_classes/entity_class[@name='zombieBikerRadiated']/property[@name='ReplaceMaterial0']"/>
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieBikerRadiated']/property[@name='ReplaceMaterial1']/@value">#@modfolder:Resources/RadEye.unity3d?GreenEye</set>	-->
+
+    <append xpath="/entity_classes">
+	
+    <entity_class name="zombieFemaleFatRadiated" extends="zombieFemaleFatFeral">  
+        <property name="ReplaceMaterial1" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>	
+    <entity_class name="zombieJoeRadiated" extends="zombieJoeFeral">  
+        <property name="ReplaceMaterial1" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>
+    <entity_class name="zombieMoeRadiated" extends="zombieMoeFeral">  
+        <property name="ReplaceMaterial1" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>
+    <entity_class name="zombieArleneRadiated" extends="zombieArleneFeral">  
+        <property name="ReplaceMaterial2" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>
+    <entity_class name="zombieScreamerRadiated" extends="zombieScreamerFeral">  
+        <property name="ReplaceMaterial1" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>
+    <entity_class name="zombieDarleneRadiated" extends="zombieDarleneFeral">  
+        <property name="ReplaceMaterial1" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>
+    <entity_class name="zombieMarleneRadiated" extends="zombieMarleneFeral">  
+        <property name="ReplaceMaterial1" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>
+    <entity_class name="zombieYoRadiated" extends="zombieYoFeral">  
+        <property name="ReplaceMaterial1" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>
+    <entity_class name="zombieSteveRadiated" extends="zombieSteveFeral">  
+        <property name="ReplaceMaterial1" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>
+    <entity_class name="zombieSkateboarderRadiated" extends="zombieSkateboarderFeral">  
+        <property name="ReplaceMaterial1" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>
+    <entity_class name="zombieCheerleaderRadiated" extends="zombieCheerleaderFeral">  
+        <property name="ReplaceMaterial1" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>
+    <entity_class name="zombieOldTimerRadiated" extends="zombieOldTimerFeral">  
+        <property name="ReplaceMaterial1" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>
+    <entity_class name="zombieBikerRadiated" extends="zombieBikerFeral">  
+        <property name="ReplaceMaterial1" value="#@modfolder:Resources/RadEye.unity3d?GreenEye"/>
+    </entity_class>	
+	
+    </append>
+</configs>	
+
