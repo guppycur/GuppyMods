@@ -210,7 +210,7 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
-	<property name="LootList" value="172"/>
+	<property name="LootList" value="19"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DisplayType" value="blockMulti" />
@@ -238,7 +238,7 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
-	<property name="LootList" value="173"/>
+	<property name="LootList" value="19"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DisplayType" value="blockMulti" />
