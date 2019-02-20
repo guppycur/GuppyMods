@@ -398,6 +398,7 @@
 <block name="spawnvehicleGuppyMilitaryTruck">
 	<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
 	<property name="CustomIcon" value="metalTrussingRampOld"/>
+	<property name="Material" value="Mcloth"/>  
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="SpawnEntity"/>
 	<property name="StabilitySupport" value="false"/>
