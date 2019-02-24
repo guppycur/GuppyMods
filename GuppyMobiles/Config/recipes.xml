@@ -11,6 +11,14 @@
     <ingredient name="oilBarrel" count="1"/>
   </recipe>
 
+	<recipe name="vehicleGuppyShoppingCartPlaceable" count="1" craft_time="600" craft_area="workbench" >
+		<ingredient name="shoppingCartEmpty" count="1"/>
+    <ingredient name="smallEngine" count="1"/>
+    <ingredient name="resourceMetalPipe" count="1"/>  
+    <ingredient name="resourceMechanicalParts" count="4"/>
+		<ingredient name="vehicleWheels" count="4"/>
+	</recipe>  
+  
 	<recipe name="vehicleGuppyPickupPlaceable" count="1" craft_time="600" craft_area="guppyAutoWorkbench" >
 		<ingredient name="carEngineAssembly" count="1"/>
     <ingredient name="carBodyAssembly" count="1"/>

@@ -1,0 +1,11 @@
+<configs>
+<append xpath="/recipes">
+	<recipe name="vehicleGuppyShoppingCartPlaceable" count="1" craft_time="600" craft_area="guppyAutoWorkbench" >
+		<ingredient name="shoppingCartEmpty" count="1"/>
+    <ingredient name="smallEngine" count="1"/>
+    <ingredient name="resourceMetalPipe" count="15"/>  
+    <ingredient name="resourceMechanicalParts" count="4"/>
+		<ingredient name="vehicleWheels" count="4"/>
+	</recipe>  
+</append>
+</configs>

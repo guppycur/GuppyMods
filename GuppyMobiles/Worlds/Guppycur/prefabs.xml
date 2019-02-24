@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <prefabs>
-
+    <decoration type="model" name="snowy_ski_lodge" position="80,244,-460" rotation="0" />
+    <decoration type="model" name="business_old_08" position="841,72,1263" rotation="1" />
 </prefabs>

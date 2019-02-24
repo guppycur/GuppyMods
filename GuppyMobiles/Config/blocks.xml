@@ -37,6 +37,10 @@
   <property name="CanPickup" value="true" param1="guppyTire"/>
 </append>
 
+<insertAfter xpath="/blocks/block[@name='shoppingCartEmpty']/property[@name='EconomicValue']">
+	<property name="CanPickup" value="true" param1="shoppingCartEmpty"/>
+</insertAfter>
+
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='resourceLeather']" />
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='resourceScrapIron']" />
 <remove xpath="/blocks/block[@name='cntCar03SedanDamage0']/drop[@name='cntCar03SedanDamage0']" />
@@ -240,6 +244,12 @@
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>  
 </block>
+
+<block name="guppyVehicleBlockPickupDamaged">
+  <property name="Extends" value="guppyVehicleBlockSedan1"/>
+  <property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockPickupPrefab"/>
+</block>
+
 <block name="guppyVehicleBlockAmbulance">
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockEMSAmbulancePrefab"/>

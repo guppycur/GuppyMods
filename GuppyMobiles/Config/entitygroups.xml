@@ -10,9 +10,12 @@
 		<entity name="vehicleGuppySedan"/>
 		<entity name="vehicleGuppyVan"/>
 		<entity name="vehicleGuppyFireTruck"/>
+		<entity name="vehicleGuppyMotorCycle2"/>    
 		<entity name="vehicleGuppyAmbulance"/>
 		<entity name="vehicleGuppyAmbulanceDamaged"/>
 		<entity name="vehicleGuppyPoliceCar"/>
+    <entity name="vehicleGuppyBigRig"/>
+    <entity name="vehicleGuppyEvo"/>    
 	</entitygroup>
 </append>
 </configs>
