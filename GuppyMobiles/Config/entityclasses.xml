@@ -101,6 +101,26 @@
 	<property name="MapIcon" value="ui_game_symbol_minibike"/>
 </entity_class>
 
+<entity_class name="vehicleGuppyOldChevy">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesCars.unity3d?guppyVehicleOldChevy"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="77"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+
 <entity_class name="vehicleGuppyMotorCycle">
 	<property name="Tags" value="vehicle"/>
 	<property name="Class" value="EntityMinibike"/>
@@ -185,6 +205,25 @@
 	<property name="Class" value="EntityVJeep"/>
 	<property name="Parent" value="Cars"/>
 	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesCars.unity3d?guppyVehicleEvo"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="77"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+<entity_class name="vehicleGuppyForklift">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/GuppyMobilesCustom.unity3d?guppyVehicleForklift"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="SurfaceCategory" value="metal"/>
 	<property name="IgnoreTrigger" value="true"/>

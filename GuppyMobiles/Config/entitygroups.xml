@@ -15,7 +15,8 @@
 		<entity name="vehicleGuppyAmbulanceDamaged"/>
 		<entity name="vehicleGuppyPoliceCar"/>
     <entity name="vehicleGuppyBigRig"/>
-    <entity name="vehicleGuppyEvo"/>    
+    <entity name="vehicleGuppyEvo"/>  
+    <entity name="vehicleGuppyOldChevy"/>
 	</entitygroup>
 </append>
 </configs>

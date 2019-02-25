@@ -22,7 +22,9 @@
 		<block name="guppyVehicleBlockMilitaryTruck" prob="0.05"/>
 		<block name="guppyVehicleBlockMilitaryTruckDamaged" prob="0.05"/>
 		<block name="guppyVehicleBlockMilitaryCar" prob="0.03"/>
-		<block name="guppyVehicleBlockMilitaryCarDamaged" prob="0.03"/>           
+		<block name="guppyVehicleBlockMilitaryCarDamaged" prob="0.03"/>  
+    <block name="guppyVehicleBlockChevyDamaged" prob="0.01"/>
+    <block name="guppyVehicleBlockChevy" prob="0.01"/>
 	</placeholder>
   
 </append>

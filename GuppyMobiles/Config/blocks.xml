@@ -308,6 +308,64 @@
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>  
 </block>
+<block name="guppyVehicleBlockChevy">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockOldChevyPrefab"/>
+  <property name="MultiBlockDim" value="3,3,7"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="172"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.15" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>  
+	<drop event="Destroy" count="0"/>  
+	<property name="DowngradeBlock" value="guppyVehicleBlockChevyDamaged"/> 
+  <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="guppyVehicleBlockChevyDamaged">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockOldChevyDamagedPrefab"/>
+  <property name="MultiBlockDim" value="3,3,7"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2"/>
+	<property name="LootList" value="173"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="damagedcarEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carEngine" count="1" prob="0.05" tag="allHarvest"/>
+	<drop event="Harvest" name="damagedcarCarburetor" count="1" prob="0.25" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="carCarburetor" count="1" prob="0.05" tag="salvageHarvest"/>
+  <drop event="Harvest" name="damagedcarTransmission" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carTransmission" count="1" prob="0.05" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedvehicleWheels" count="2" prob="0.5" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleWheels" count="2" prob="0.15" tag="salvageHarvest"/>
+  <drop event="Harvest" name="carChassis" count="1" prob="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>  
+  <property name="SortOrder1" value="70a0" />
+  <property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
 <block name="guppyVehicleBlockBigRig">
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#@modfolder:Resources/GuppyMobiles.unity3d?guppyVehicleBlockCarBigRigPrefab"/>
